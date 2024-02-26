@@ -1,0 +1,137 @@
+{
+    "name": "Nintendo Switch Joy-Con",
+    "functions": {
+        "analog_sticks": [
+            {
+                "name": "Left Stick",
+                "has_button": true
+            },
+            {
+                "name": "Right Stick",
+                "has_button": true
+            }
+        ],
+        "digital_sticks": null,
+        "action_buttons": [
+            {
+                "name": "A",
+                "analog": false
+            },
+            {
+                "name": "B",
+                "analog": false
+            },
+            {
+                "name": "X",
+                "analog": false
+            },
+            {
+                "name": "Y",
+                "analog": false
+            },
+            {
+                "name": "L",
+                "analog": false
+            },
+            {
+                "name": "R",
+                "analog": false
+            },
+            {
+                "name": "ZL",
+                "analog": false
+            },
+            {
+                "name": "ZR",
+                "analog": false
+            },
+            {
+                "name": "SL-L",
+                "analog": false
+            },
+            {
+                "name": "SR-L",
+                "analog": false
+            },
+            {
+                "name": "SL-R",
+                "analog": false
+            },
+            {
+                "name": "SR-R",
+                "analog": false
+            }
+        ],
+        "menu_buttons": [
+            "-",
+            "+"
+        ],
+        "system_buttons": [
+            "Capture",
+            "Home"
+        ],
+        "other_buttons": [
+            "Sync"
+        ],
+        "trackpads": null,
+        "touch_screens": null,
+        "directional_buttons": [
+            {
+                "set": [
+                    "Up",
+                    "Down",
+                    "Left",
+                    "Right"
+                ],
+                "socd_prevention": {
+                    "hardware": false,
+                    "software": null
+                }
+            }
+        ],
+        "gyroscope": true,
+        "accelerometer": false,
+        "ir_reciever": true,
+        "extension_ports": 2,
+        "headset_port": false,
+        "speaker": false,
+        "microphone": false,
+        "cable": null,
+        "bluetooth": true,
+        "2_4ghz": false,
+        "rumble": "enhanced",
+        "digital_to_analog_conversion": null,
+        "pc_xinput": false,
+        "pc_steaminput": false
+    },
+    "variants": [
+        {
+            "name": "Joy-Con Pair",
+            "image": "image.png"
+        },
+        {
+            "name": "Joy-Con Grip",
+            "image": "grip.png"
+        },
+        {
+            "name": "Joy-Con (L)",
+            "image": "left.png"
+        },
+        {
+            "name": "Joy-Con (R)",
+            "image": "right.png"
+        },
+        {
+            "name": "Portable Mode",
+            "image": "portable.png"
+        },
+        {
+            "name": "Ring-Con",
+            "image": "ring.png"
+        },
+        {
+            "name": "Leg Strap",
+            "image": "leg.png"
+        }
+    ]
+}
