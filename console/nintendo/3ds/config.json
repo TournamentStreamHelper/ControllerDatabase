@@ -1,0 +1,107 @@
+{
+    "name": "Nintendo 3DS",
+    "functions": {
+        "analog_sticks": [
+            {
+                "name": "Circle Pad",
+                "has_button": false
+            }
+        ],
+        "digital_sticks": null,
+        "action_buttons": [
+            {
+                "name": "A",
+                "analog": false
+            },
+            {
+                "name": "B",
+                "analog": false
+            },
+            {
+                "name": "X",
+                "analog": false
+            },
+            {
+                "name": "Y",
+                "analog": false
+            },
+            {
+                "name": "L",
+                "analog": false
+            },
+            {
+                "name": "R",
+                "analog": false
+            }
+        ],
+        "menu_buttons": [
+            "Start",
+            "Select"
+        ],
+        "system_buttons": [
+            "Home"
+        ],
+        "other_buttons": [
+            "Power", "3D Slider", "Wireless Switch"
+        ],
+        "trackpads": null,
+        "touch_screens": [{
+            "resolution": [320,240],
+            "type": "resistive"
+        }],
+        "directional_buttons": [
+            {
+                "set": [
+                    "Up",
+                    "Down",
+                    "Left",
+                    "Right"
+                ],
+                "socd_prevention": {
+                    "hardware": true,
+                    "software": null
+                }
+            }
+        ],
+        "gyroscope": true,
+        "accelerometer": true,
+        "ir_reciever": true,
+        "extension_ports": 0,
+        "headset_port": true,
+        "speaker": true,
+        "microphone": false,
+        "cable": null,
+        "bluetooth": false,
+        "2_4ghz": false,
+        "rumble": null,
+        "digital_to_analog_conversion": null,
+        "pc_xinput": false,
+        "pc_steaminput": false
+    },
+    "variants": [
+        {
+            "name": "Nintendo 3DS",
+            "image": "image.png"
+        },
+        {
+            "name": "Nintendo 3DS XL",
+            "image": "ll.png"
+        },
+        {
+            "name": "Nintendo 2DS",
+            "image": "2ds.png"
+        },
+        {
+            "name": "New Nintendo 3DS",
+            "image": "new.png"
+        },
+        {
+            "name": "New Nintendo 3DS XL",
+            "image": "new_ll.png"
+        },
+        {
+            "name": "New Nintendo 2DS XL",
+            "image": "2ds_ll.png"
+        }
+    ]
+}
