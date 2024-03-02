@@ -118,7 +118,7 @@
         ],
         "pc_xinput": false,
         "pc_steaminput": true,
-        "native_consoles": ["ps4", "ps5"]
+        "native_consoles": ["ps4", "ps5", "nsw", "ps3"]
     },
     "variants": [
         {
