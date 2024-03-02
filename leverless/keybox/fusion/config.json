@@ -48,7 +48,9 @@
         "menu_buttons": [
             "Options"
         ],
-        "system_buttons": ["Share"],
+        "system_buttons": [
+            "Share"
+        ],
         "other_buttons": null,
         "trackpads": null,
         "touch_screens": null,
@@ -63,8 +65,17 @@
                 "socd_prevention": {
                     "hardware": false,
                     "software": {
-                        "left_right": ["neutral", "last_input", "disable"],
-                        "up_down": ["neutral", "up", "last_input", "disable"]
+                        "left_right": [
+                            "neutral",
+                            "last_input",
+                            "disable"
+                        ],
+                        "up_down": [
+                            "neutral",
+                            "up",
+                            "last_input",
+                            "disable"
+                        ]
                     }
                 }
             }
@@ -107,15 +118,16 @@
         ],
         "pc_xinput": false,
         "pc_steaminput": true,
-        "variants": [
-            {
-                "name": "Regular Layout",
-                "image": "image.png"
-            },
-            {
-                "name": "Mirrored",
-                "image": "mirror.png"
-            }
-        ]
-    }
+        "native_consoles": ["ps4", "ps5"]
+    },
+    "variants": [
+        {
+            "name": "Regular Layout",
+            "image": "image.png"
+        },
+        {
+            "name": "Mirrored",
+            "image": "mirror.png"
+        }
+    ]
 }
