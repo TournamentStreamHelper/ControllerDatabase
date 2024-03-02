@@ -80,7 +80,10 @@
         "headset_port": false,
         "speaker": false,
         "microphone": false,
-        "cable": null,
+        "cable": {
+            "interface": "USB-C",
+            "removable": true
+        },
         "bluetooth": true,
         "2_4ghz": false,
         "rumble": "enhanced",
