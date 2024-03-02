@@ -1,0 +1,121 @@
+{
+    "name": "Keybox Fusion",
+    "functions": {
+        "analog_sticks": null,
+        "digital_sticks": null,
+        "action_buttons": [
+            {
+                "name": "△",
+                "analog": false
+            },
+            {
+                "name": "◯",
+                "analog": false
+            },
+            {
+                "name": "□",
+                "analog": false
+            },
+            {
+                "name": "✕",
+                "analog": false
+            },
+            {
+                "name": "L1",
+                "analog": false
+            },
+            {
+                "name": "R1",
+                "analog": false
+            },
+            {
+                "name": "L2",
+                "analog": false
+            },
+            {
+                "name": "R2",
+                "analog": false
+            },
+            {
+                "name": "L3",
+                "analog": false
+            },
+            {
+                "name": "R3",
+                "analog": false
+            }
+        ],
+        "menu_buttons": [
+            "Options"
+        ],
+        "system_buttons": ["Share"],
+        "other_buttons": null,
+        "trackpads": null,
+        "touch_screens": null,
+        "directional_buttons": [
+            {
+                "set": [
+                    "Up",
+                    "Down",
+                    "Left",
+                    "Right"
+                ],
+                "socd_prevention": {
+                    "hardware": false,
+                    "software": {
+                        "left_right": ["neutral", "last_input", "disable"],
+                        "up_down": ["neutral", "up", "last_input", "disable"]
+                    }
+                }
+            }
+        ],
+        "gyroscope": false,
+        "accelerometer": false,
+        "ir_reciever": false,
+        "extension_ports": 0,
+        "headset_port": false,
+        "speaker": false,
+        "microphone": false,
+        "cable": {
+            "interface": "USB-C",
+            "removable": true
+        },
+        "bluetooth": false,
+        "2_4ghz": false,
+        "rumble": null,
+        "digital_to_analog_conversion": [
+            {
+                "emulated_analog": "Left Stick",
+                "type": "8_way",
+                "modifier_buttons": 0
+            },
+            {
+                "emulated_analog": "Right Stick",
+                "type": "8_way",
+                "modifier_buttons": 0
+            },
+            {
+                "emulated_analog": "L2",
+                "type": "button",
+                "modifier_buttons": 0
+            },
+            {
+                "emulated_analog": "R2",
+                "type": "button",
+                "modifier_buttons": 0
+            }
+        ],
+        "pc_xinput": false,
+        "pc_steaminput": true,
+        "variants": [
+            {
+                "name": "Regular Layout",
+                "image": "image.png"
+            },
+            {
+                "name": "Mirrored",
+                "image": "mirror.png"
+            }
+        ]
+    }
+}
