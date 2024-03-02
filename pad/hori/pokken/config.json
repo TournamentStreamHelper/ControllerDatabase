@@ -75,6 +75,7 @@
         "rumble": null,
         "digital_to_analog_conversion": null,
         "pc_xinput": false,
-        "pc_steaminput": true
+        "pc_steaminput": true,
+        "native_consoles": ["wiiu", "nsw"]
     }
 }

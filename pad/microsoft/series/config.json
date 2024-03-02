@@ -76,6 +76,7 @@
         "rumble": "regular",
         "digital_to_analog_conversion": null,
         "pc_xinput": true,
-        "pc_steaminput": true
+        "pc_steaminput": true,
+        "native_consoles": ["xb1", "xbs"]
     }
 }

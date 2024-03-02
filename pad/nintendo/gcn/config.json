@@ -79,6 +79,7 @@
         "rumble": "regular",
         "digital_to_analog_conversion": null,
         "pc_xinput": false,
-        "pc_steaminput": false
+        "pc_steaminput": false,
+        "native_consoles": ["ngc", "wii"]
     }
 }
