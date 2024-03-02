@@ -71,7 +71,7 @@
             "Home"
         ],
         "other_buttons": [
-            "Sync"
+            "Sync-L", "Sync-R"
         ],
         "trackpads": null,
         "touch_screens": null,
