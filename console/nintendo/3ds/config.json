@@ -69,7 +69,7 @@
         "extension_ports": 0,
         "headset_port": true,
         "speaker": true,
-        "microphone": false,
+        "microphone": true,
         "cable": null,
         "bluetooth": false,
         "2_4ghz": false,
