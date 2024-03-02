@@ -1,0 +1,84 @@
+{
+    "name": "Nintendo GameCube Controller",
+    "functions": {
+        "analog_sticks": [
+            {
+                "name": "Analog Stick",
+                "has_button": false
+            },
+            {
+                "name": "C-Stick",
+                "has_button": false
+            }
+        ],
+        "digital_sticks": null,
+        "action_buttons": [
+            {
+                "name": "A",
+                "analog": false
+            },
+            {
+                "name": "B",
+                "analog": false
+            },
+            {
+                "name": "X",
+                "analog": false
+            },
+            {
+                "name": "Y",
+                "analog": false
+            },
+            {
+                "name": "L",
+                "analog": true
+            },
+            {
+                "name": "R",
+                "analog": true
+            },
+            {
+                "name": "Z",
+                "analog": false
+            }
+        ],
+        "menu_buttons": [
+            "Start"
+        ],
+        "system_buttons": null,
+        "other_buttons": null,
+        "trackpads": null,
+        "touch_screens": null,
+        "directional_buttons": [
+            {
+                "set": [
+                    "Up",
+                    "Down",
+                    "Left",
+                    "Right"
+                ],
+                "socd_prevention": {
+                    "hardware": true,
+                    "software": null
+                }
+            }
+        ],
+        "gyroscope": false,
+        "accelerometer": false,
+        "ir_reciever": false,
+        "extension_ports": 0,
+        "headset_port": false,
+        "speaker": false,
+        "microphone": false,
+        "cable": {
+            "interface": "GameCube Controller Port",
+            "removable": false
+        },
+        "bluetooth": false,
+        "2_4ghz": false,
+        "rumble": "regular",
+        "digital_to_analog_conversion": null,
+        "pc_xinput": false,
+        "pc_steaminput": false
+    }
+}
