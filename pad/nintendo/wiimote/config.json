@@ -1,0 +1,92 @@
+{
+    "name": "Nintendo Wii Remote",
+    "functions": {
+        "analog_sticks": null,
+        "digital_sticks": null,
+        "action_buttons": [
+            {
+                "name": "A",
+                "analog": false
+            },
+            {
+                "name": "B",
+                "analog": false
+            },
+            {
+                "name": "1",
+                "analog": false
+            },
+            {
+                "name": "2",
+                "analog": false
+            }
+        ],
+        "menu_buttons": [
+            "-",
+            "+"
+        ],
+        "system_buttons": [
+            "Home"
+        ],
+        "other_buttons": [
+            "Sync", "Power"
+        ],
+        "trackpads": null,
+        "touch_screens": null,
+        "directional_buttons": [
+            {
+                "set": [
+                    "Up",
+                    "Down",
+                    "Left",
+                    "Right"
+                ],
+                "socd_prevention": {
+                    "hardware": true,
+                    "software": null
+                }
+            }
+        ],
+        "gyroscope": false,
+        "accelerometer": true,
+        "ir_reciever": true,
+        "extension_ports": 1,
+        "headset_port": false,
+        "speaker": true,
+        "microphone": false,
+        "cable": null,
+        "bluetooth": true,
+        "2_4ghz": false,
+        "rumble": "enhanced",
+        "digital_to_analog_conversion": null,
+        "pc_xinput": false,
+        "pc_steaminput": false,
+        "native_consoles": ["wii", "wiiu"]
+    },
+    "variants": [
+        {
+            "name": "Wii Remote",
+            "image": "image.png"
+        },
+        {
+            "name": "Wii Remote + Nunchuck",
+            "image": "nunchuck.png"
+        },
+        {
+            "name": "Wii Remote + Wii Motion Plus",
+            "image": "motionplus.png"
+        },
+        {
+            "name": "Wii Remote Plus",
+            "image": "remoteplus.png"
+        },
+        {
+            "name": "Wii Classic Controller",
+            "image": "classic.png"
+        },
+        {
+            "name": "Wii Classic Controller Pro",
+            "image": "classicpro.png"
+        }
+    ]
+}

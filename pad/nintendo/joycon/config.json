@@ -71,7 +71,7 @@
             "Home"
         ],
         "other_buttons": [
-            "Sync"
+            "Sync-L", "Sync-R"
         ],
         "trackpads": null,
         "touch_screens": null,
@@ -102,7 +102,8 @@
         "rumble": "enhanced",
         "digital_to_analog_conversion": null,
         "pc_xinput": false,
-        "pc_steaminput": false
+        "pc_steaminput": false,
+        "native_consoles": ["nsw"]
     },
     "variants": [
         {
