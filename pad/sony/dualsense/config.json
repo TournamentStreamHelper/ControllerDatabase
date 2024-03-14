@@ -60,7 +60,7 @@
                 }
             }
         ],
-        "gyroscope": false,
+        "gyroscope": true,
         "accelerometer": false,
         "ir_reciever": false,
         "extension_ports": 0,
@@ -76,6 +76,7 @@
         "rumble": "Haptic Feedback",
         "digital_to_analog_conversion": null,
         "pc_xinput": true,
-        "pc_steaminput": true
+        "pc_steaminput": true,
+        "native_consoles": ["ps5"]
     }
 }
