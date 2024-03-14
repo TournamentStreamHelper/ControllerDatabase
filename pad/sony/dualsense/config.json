@@ -1,0 +1,81 @@
+{
+    "name": "Sony Dualsense Wireless Controller",
+    "functions": {
+        "analog_sticks": [
+            {
+                "name": "Left Stick",
+                "has_button": true
+            },
+            {
+                "name": "Right Stick",
+                "has_button": true
+            }
+        ],
+        "digital_sticks": null,
+        "action_buttons": [
+            {
+                "name": "Cross",
+                "analog": false
+            },
+            {
+                "name": "Circle",
+                "analog": false
+            },
+            {
+                "name": "Square",
+                "analog": false
+            },
+            {
+                "name": "Triangle",
+                "analog": false
+            },
+            {
+                "name": "L1",
+                "analog": false
+            },
+            {
+                "name": "R1",
+                "analog": false
+            },
+            {
+                "name": "L2",
+                "analog": true
+            },
+            {
+                "name": "R2",
+                "analog": true
+            }
+        ],
+        "menu_buttons": ["Create", "Options"],
+        "system_buttons": ["Share", "Guide"],
+        "other_buttons": ["Mute"],
+        "trackpads": true,
+        "touch_screens": null,
+        "directional_buttons": [
+            {
+                "set": ["Up", "Down", "Left", "Right"],
+                "socd_prevention": {
+                    "hardware": true,
+                    "software": null
+                }
+            }
+        ],
+        "gyroscope": false,
+        "accelerometer": false,
+        "ir_reciever": false,
+        "extension_ports": 0,
+        "headset_port": true,
+        "speaker": true,
+        "microphone": true,
+        "cable": {
+            "interface": "USB-C",
+            "removable": true
+        },
+        "bluetooth": true,
+        "2_4ghz": false,
+        "rumble": "Haptic Feedback",
+        "digital_to_analog_conversion": null,
+        "pc_xinput": true,
+        "pc_steaminput": true
+    }
+}
