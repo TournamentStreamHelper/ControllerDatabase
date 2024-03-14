@@ -47,9 +47,14 @@
             }
         ],
         "menu_buttons": ["Create", "Options"],
-        "system_buttons": ["Share", "Guide"],
-        "other_buttons": ["Mute"],
-        "trackpads": true,
+        "system_buttons": ["Share", "Guide", "Mute"],
+        "other_buttons": null,
+        "trackpads": [ 
+            {
+            "name": "Trackpad",
+            "clickable": true
+            }
+        ],
         "touch_screens": null,
         "directional_buttons": [
             {
@@ -73,7 +78,7 @@
         },
         "bluetooth": true,
         "2_4ghz": false,
-        "rumble": "Haptic Feedback",
+        "rumble": "enhanced",
         "digital_to_analog_conversion": null,
         "pc_xinput": true,
         "pc_steaminput": true,
