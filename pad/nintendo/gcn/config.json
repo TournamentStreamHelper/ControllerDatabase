@@ -81,5 +81,6 @@
         "pc_xinput": false,
         "pc_steaminput": false,
         "native_consoles": ["ngc", "wii"]
-    }
+    },
+    "source": "https://archive.org/details/scan-20210215-1"
 }
