@@ -13,7 +13,7 @@ jobs:
         uses: izhangzhihao/delete-comment@master
         with: 
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          delete_user_name: open-collective-bot[bot]
+          delete_user_name: github-actions
           issue_number: ${{ github.event.number }}
       - uses: actions/checkout@v3
       - name: Validate Category JSON
@@ -32,6 +32,7 @@ jobs:
           schema: ".schema/controller.json"
           files: "*/*/*/config.json"
       - name: Comment PR
+        if: failure()
         uses: thollander/actions-comment-pull-request@v2.5.0
         with:
           message: |
