@@ -138,48 +138,48 @@
                 },
                 "gyroscope": {
                     "type": "boolean",
-                    "name": "Gyroscope",
+                    "title": "Gyroscope",
                     "description": "Whether or not the controller has an integrated gyroscope"
                 },
                 "accelerometer": {
                     "type": "boolean",
-                    "name": "Accelerometer",
+                    "title": "Accelerometer",
                     "description": "Whether or not the controller has an integrated accelerometer"
                 },
                 "macro": {
                     "type": "boolean",
-                    "name": "Macro",
+                    "title": "Macro",
                     "description": "Indicates if the buttons of the controller can be mapped to perform a sequence of and/or simultaneous standard button presses automatically\nNot to be confused with Turbo\nIncludes the simultaneous pressing of directional buttons"
                 },
                 "turbo": {
                     "type": "boolean",
-                    "name": "Turbo",
+                    "title": "Turbo",
                     "description": "Indicates if the buttons of the controller can be mapped to simulate the frequent and periodic pressing and unpressing of said button when held\nNot to be confued with Macro"
                 },
                 "ir_reciever": {
                     "type": "boolean",
-                    "name": "Infrared Receiver",
+                    "title": "Infrared Receiver",
                     "description": "Whether or not the controller has an integrated Infrared Receiver"
                 },
                 "extension_ports": {
                     "type": "integer",
                     "minimum": 0,
-                    "name": "Extension Ports",
+                    "title": "Extension Ports",
                     "description": "Number of additional data ports present on the controller, excluding any cable port used for connecting or charging the device, or the Headset Port"
                 },
                 "headset_port": {
                     "type": "boolean",
-                    "name": "Headset Port",
+                    "title": "Headset Port",
                     "description": "Whether or not the controller has an integrated Jack headphone port"
                 },
                 "speaker": {
                     "type": "boolean",
-                    "name": "Speaker",
+                    "title": "Speaker",
                     "description": "Whether or not the controller has an integrated speaker"
                 },
                 "microphone": {
                     "type": "boolean",
-                    "name": "Microphone",
+                    "title": "Microphone",
                     "description": "Whether or not the controller has an integrated microphone"
                 },
                 "cable": {
@@ -187,12 +187,12 @@
                 },
                 "bluetooth": {
                     "type": "boolean",
-                    "name": "Bluetooth",
+                    "title": "Bluetooth",
                     "description": "Whether or not the controller is capable to connect wirerlessly to a device via Bluetooth"
                 },
                 "2_4ghz": {
                     "type": "boolean",
-                    "name": "2.4GHz",
+                    "title": "2.4GHz",
                     "description": "Whether or not the controller is capable to connect wirerlessly to a device via a 2.4GHz connection, including if said connection requires an additional dongle provided with the controller"
                 },
                 "rumble": {
@@ -205,7 +205,7 @@
                         "standard",
                         null
                     ],
-                    "name": "Rumble",
+                    "title": "Rumble",
                     "description": "Type of rumble functionnality offered by the controller, if it applies.\n- standard: Refers to traditional rumble motors found in the Nintendo GameCube controller for instance\n- enhanced: Refers to any kind of haptic feedback implemented other than the former, as seen for instance in the Nintendo Switch Joy-Con or the Sony Dualsense"
                 },
                 "digital_to_analog_conversion": {
@@ -220,12 +220,12 @@
                 },
                 "pc_xinput": {
                     "type": "boolean",
-                    "name": "XInput compatibility",
+                    "title": "XInput compatibility",
                     "description": "Whether or not the controller can be recognized by Windows and Windows games as an XInput controller with no additional drivers or adapters, and as such behave as an Xbox 360 controller would"
                 },
                 "pc_steaminput": {
                     "type": "boolean",
-                    "name": "Steam Input compatibility",
+                    "title": "Steam Input compatibility",
                     "description": "Whether or not the controller can be recognized by Steam on Windows and Linux with no additional drivers or adapters, and translate the controller inputs to XInput via Steam Input"
                 },
                 "native_consoles": {
@@ -258,7 +258,7 @@
                         ]
                     },
                     "uniqueItems": true,
-                    "name": "Native Consoles",
+                    "title": "Native Consoles",
                     "description": "Lists the consoles on which the controller can be used without the use of an adapter, for most games.\nIn the case of the PS5, applies if the controller is recognized by the PS4 compatibility layer implemented in Street Fighter 6 and other fighting games as well."
                 }
             },
