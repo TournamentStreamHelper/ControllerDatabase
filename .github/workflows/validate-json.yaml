@@ -6,9 +6,12 @@ name: Validate JSON
 jobs:
   validate:
     runs-on: ubuntu-latest
-    permissions:
-      pull-requests: write
     steps:
+      - name: Delete previous comment
+        uses: thollander/actions-comment-pull-request@v2.5.0
+        with:
+          comment_tag: validate_json
+        mode: delete
       - uses: actions/checkout@v3
       - name: Validate Category JSON
         uses: dsanders11/json-schema-validate-action@v1.1.0
@@ -28,6 +31,6 @@ jobs:
       - name: Comment PR
         uses: thollander/actions-comment-pull-request@v2.5.0
         with:
-          filePath: .github/workflows/validate-json.yaml
+          comment_tag: validate_json
           message: |
             Validation of the JSON files has failed, please check the [Github Action log](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) to see why
