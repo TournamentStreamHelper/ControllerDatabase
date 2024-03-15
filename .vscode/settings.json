@@ -2,7 +2,19 @@
     "json.schemas": [
         {
             "fileMatch": [
-                "*/*/*/config.json"
+                "file:///c:/Users/wolfy/Git/ControllerDatabase/*/config.json"
+            ],
+            "url": ".schema/category.json"
+        },
+        {
+            "fileMatch": [
+                "file:///c:/Users/wolfy/Git/ControllerDatabase/*/*/config.json"
+            ],
+            "url": ".schema/manufacturer.json"
+        },
+        {
+            "fileMatch": [
+                "file:///c:/Users/wolfy/Git/ControllerDatabase/*/*/*/config.json"
             ],
             "url": ".schema/controller.json"
         },

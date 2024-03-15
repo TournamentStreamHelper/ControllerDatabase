@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/CategoryDefinition",
+    "definitions": {
+        "CategoryDefinition": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "title": "Name",
+                    "description": "Name of the category"
+                },
+                "desc": {
+                    "type": "string",
+                    "title": "Description",
+                    "description": "Description of the category"
+                }
+            },
+            "required": [
+                "desc",
+                "name"
+            ],
+            "title": "Category",
+            "description": "Groups controllers which have similar attributes"
+        }
+    }
+}

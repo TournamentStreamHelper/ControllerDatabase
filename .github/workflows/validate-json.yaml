@@ -8,6 +8,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Validate Category JSON
+        uses: dsanders11/json-schema-validate-action@v1.1.0
+        with:
+          schema: ".schema/category.json"
+          files: "*/config.json"
+      - name: Validate Manufacturer JSON
+        uses: dsanders11/json-schema-validate-action@v1.1.0
+        with:
+          schema: ".schema/manufacturer.json"
+          files: "*/*/config.json"
       - name: Validate Controller JSON
         uses: dsanders11/json-schema-validate-action@v1.1.0
         with:
