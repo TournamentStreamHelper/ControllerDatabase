@@ -1,0 +1,16 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "*/*/*/config.json"
+            ],
+            "url": ".schema/controller.json"
+        },
+        {
+            "fileMatch": [
+                ".schema/*.json"
+            ],
+            "url": "https://json-schema.org/draft/2020-12/schema"
+        }
+    ]
+}

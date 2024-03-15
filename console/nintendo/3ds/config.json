@@ -77,7 +77,9 @@
         "digital_to_analog_conversion": null,
         "pc_xinput": false,
         "pc_steaminput": false,
-        "native_consoles": null
+        "native_consoles": null,
+        "macro": false,
+        "turbo": false
     },
     "variants": [
         {

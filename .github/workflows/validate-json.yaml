@@ -1,0 +1,18 @@
+on:
+  pull_request:
+    branches:
+      - main
+name: Validate Controller JSON
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Validate JSON
+        uses: walbo/validate-json@v1.1.0
+        with:
+          files: "*/*/*/config.json"
+          schema: .schema/controller.json
+          schema-version: draft-04
+          fail-on-missing-schema: true
+          strict: true
