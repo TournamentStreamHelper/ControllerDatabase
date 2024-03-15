@@ -80,10 +80,12 @@
         },
         "bluetooth": true,
         "2_4ghz": false,
-        "rumble": "regular",
+        "rumble": "standard",
         "digital_to_analog_conversion": null,
         "pc_xinput": false,
         "pc_steaminput": true,
-        "native_consoles": null
+        "native_consoles": null,
+        "macro": false,
+        "turbo": false
     }
 }

@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/ManufacturerDefinition",
+    "definitions": {
+        "ManufacturerDefinition": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "title": "Name",
+                    "description": "Name of the manufacturer"
+                }
+            },
+            "required": [
+                "name"
+            ],
+            "title": "Manufacturer",
+            "description": "Groups controllers which have the same manufacturer in a given category"
+        }
+    }
+}
