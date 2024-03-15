@@ -12,7 +12,7 @@ jobs:
         uses: walbo/validate-json@v1.1.0
         with:
           files: "*/*/*/config.json"
-          schema: ".schema/controller.json"
+          schema: "./.schema/controller.json"
           schema-version: draft-04
           fail-on-missing-schema: true
           strict: true
