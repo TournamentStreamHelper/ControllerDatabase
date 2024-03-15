@@ -17,10 +17,7 @@
                 "source": {
                     "type": "string",
                     "format": "uri",
-                    "qt-uri-protocols": [
-                        "http",
-                        "https"
-                    ],
+                    "pattern": "/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)",
                     "title": "Source",
                     "description": "Main source for information on the controller specifications\nIdeally either a link to a manual on the Internet Archive or to an archived webpage on the Wayback Machine"
                 },
