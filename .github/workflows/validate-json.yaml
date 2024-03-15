@@ -32,6 +32,5 @@ jobs:
       - name: Comment PR
         uses: thollander/actions-comment-pull-request@v2.5.0
         with:
-          comment_tag: validate_json
           message: |
             Validation of the JSON files has failed, please check the [Github Action log](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) to see why
