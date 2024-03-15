@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Validate Controller JSON
-        uses: dsanders11/json-schema-validate-action
+        uses: dsanders11/json-schema-validate-action@v1.1.0
         with:
           schema: .schema/controller.json
           files: "*/*/*/config.json"
