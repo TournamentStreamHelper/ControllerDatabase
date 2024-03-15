@@ -25,8 +25,9 @@ jobs:
         with:
           schema: ".schema/controller.json"
           files: "*/*/*/config.json"
-      - name: Open Comment
-        uses: mshick/add-pr-comment@v2
+      - name: Comment PR
+        uses: thollander/actions-comment-pull-request@v2.5.0
         with:
+          filePath: .github/workflows/validate-json.yaml
           message: |
             Validation of the JSON files has failed, please check the [Github Action log](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) to see why
