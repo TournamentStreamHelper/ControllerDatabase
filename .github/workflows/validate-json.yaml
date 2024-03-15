@@ -6,6 +6,8 @@ name: Validate JSON
 jobs:
   validate:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     steps:
       - name: Delete previous comment
         uses: izhangzhihao/delete-comment@master
