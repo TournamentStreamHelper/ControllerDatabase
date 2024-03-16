@@ -29,19 +29,19 @@
                 "analog": false
             },
             {
-                "name": "ZL",
+                "name": "L2",
                 "analog": false
             },
             {
-                "name": "ZR",
+                "name": "R2",
                 "analog": false
             },
             {
-                "name": "LS",
+                "name": "L3",
                 "analog": false
             },
             {
-                "name": "RS",
+                "name": "R3",
                 "analog": false
             }
         ],
@@ -50,21 +50,22 @@
             "+"
         ],
         "system_buttons": [
-            "Capture",
+            "Star",
             "Home"
         ],
         "other_buttons": [
-            "Sync"
+            "Sync",
+            "Mode Switch"
         ],
         "trackpads": null,
         "touch_screens": null,
         "directional_buttons": [
             {
                 "set": [
-                    "LS-Up",
-                    "LS-Down",
-                    "LS-Left",
-                    "LS-Right"
+                    "Left Stick Up",
+                    "Left Stick Down",
+                    "Left Stick Left",
+                    "Left Stick Right"
                 ],
                 "socd_prevention": {
                     "hardware": false,
@@ -73,10 +74,10 @@
             },
             {
                 "set": [
-                    "RS-Up",
-                    "RS-Down",
-                    "RS-Left",
-                    "RS-Right"
+                    "Right Stick Up",
+                    "Right Stick Down",
+                    "Right Stick Left",
+                    "Right Stick Right"
                 ],
                 "socd_prevention": {
                     "hardware": false,
@@ -85,10 +86,10 @@
             },
             {
                 "set": [
-                    "DPad-Up",
-                    "DPad-Down",
-                    "DPad-Left",
-                    "DPad-Right"
+                    "D-Pad Up",
+                    "D-Pad Down",
+                    "D-Pad Left",
+                    "D-Pad Right"
                 ],
                 "socd_prevention": {
                     "hardware": false,
@@ -128,7 +129,7 @@
             "nsw"
         ],
         "macro": false,
-        "turbo": false
+        "turbo": true
     },
-    "source": "https://www.8bitdo.com/lite/"
+    "source": "https://download.8bitdo.com/Manual/Controller/Lite/Lite_Manual.pdf"
 }
