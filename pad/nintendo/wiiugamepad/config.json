@@ -1,0 +1,107 @@
+{
+    "name": "Wii U Gamepad",
+    "functions": {
+        "analog_sticks": [
+            {
+                "name": "Left Stick",
+                "has_button": true
+            },
+            {
+                "name": "Right Stick",
+                "has_button": true
+            }
+        ],
+        "digital_sticks": null,
+        "action_buttons": [
+            {
+                "name": "A",
+                "analog": false
+            },
+            {
+                "name": "B",
+                "analog": false
+            },
+            {
+                "name": "X",
+                "analog": false
+            },
+            {
+                "name": "Y",
+                "analog": false
+            },
+            {
+                "name": "L",
+                "analog": false
+            },
+            {
+                "name": "R",
+                "analog": false
+            },
+            {
+                "name": "ZL",
+                "analog": false
+            },
+            {
+                "name": "ZR",
+                "analog": false
+            }
+        ],
+        "menu_buttons": [
+            "-",
+            "+"
+        ],
+        "system_buttons": [
+            "Home"
+        ],
+        "other_buttons": [
+            "Sync",
+            "Power",
+            "TV",
+            "Volume Slider"
+        ],
+        "trackpads": null,
+        "touch_screens": [
+            {
+                "resolution": [
+                    854,
+                    480
+                ],
+                "type": "resistive"
+            }
+        ],
+        "directional_buttons": [
+            {
+                "set": [
+                    "Up",
+                    "Down",
+                    "Left",
+                    "Right"
+                ],
+                "socd_prevention": {
+                    "hardware": true,
+                    "software": null
+                }
+            }
+        ],
+        "gyroscope": true,
+        "accelerometer": true,
+        "ir_reciever": false,
+        "extension_ports": 1,
+        "headset_port": true,
+        "speaker": true,
+        "microphone": true,
+        "cable": null,
+        "bluetooth": false,
+        "2_4ghz": false,
+        "rumble": "enhanced",
+        "digital_to_analog_conversion": null,
+        "pc_xinput": false,
+        "pc_steaminput": false,
+        "native_consoles": [
+            "wiiu"
+        ],
+        "macro": false,
+        "turbo": false
+    },
+    "source": "https://archive.org/details/wii-u-operations-manual"
+}
