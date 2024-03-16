@@ -2,8 +2,6 @@ name: Generate the documentation from the JSON Schemas
 
 on:
   push:
-    branches:
-      - *
     paths-ignore:
       - main
 jobs:
