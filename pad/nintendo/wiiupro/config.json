@@ -1,7 +1,16 @@
 {
-    "name": "Nintendo Wii Remote",
+    "name": "Wii U Pro Controller",
     "functions": {
-        "analog_sticks": null,
+        "analog_sticks": [
+            {
+                "name": "Left Stick",
+                "has_button": true
+            },
+            {
+                "name": "Right Stick",
+                "has_button": true
+            }
+        ],
         "digital_sticks": null,
         "action_buttons": [
             {
@@ -13,11 +22,27 @@
                 "analog": false
             },
             {
-                "name": "1",
+                "name": "X",
                 "analog": false
             },
             {
-                "name": "2",
+                "name": "Y",
+                "analog": false
+            },
+            {
+                "name": "L",
+                "analog": false
+            },
+            {
+                "name": "R",
+                "analog": false
+            },
+            {
+                "name": "ZL",
+                "analog": false
+            },
+            {
+                "name": "ZR",
                 "analog": false
             }
         ],
@@ -29,7 +54,8 @@
             "Home"
         ],
         "other_buttons": [
-            "Sync", "Power"
+            "Sync",
+            "Power"
         ],
         "trackpads": null,
         "touch_screens": null,
@@ -48,11 +74,11 @@
             }
         ],
         "gyroscope": false,
-        "accelerometer": true,
-        "ir_reciever": true,
-        "extension_ports": 1,
+        "accelerometer": false,
+        "ir_reciever": false,
+        "extension_ports": 0,
         "headset_port": false,
-        "speaker": true,
+        "speaker": false,
         "microphone": false,
         "cable": null,
         "bluetooth": true,
@@ -61,35 +87,11 @@
         "digital_to_analog_conversion": null,
         "pc_xinput": false,
         "pc_steaminput": false,
-        "native_consoles": ["wii", "wiiu"],
+        "native_consoles": [
+            "wiiu"
+        ],
         "macro": false,
         "turbo": false
     },
-    "variants": [
-        {
-            "name": "Wii Remote",
-            "image": "image.png"
-        },
-        {
-            "name": "Wii Remote + Nunchuck",
-            "image": "nunchuck.png"
-        },
-        {
-            "name": "Wii Remote + Wii Motion Plus",
-            "image": "motionplus.png"
-        },
-        {
-            "name": "Wii Remote Plus",
-            "image": "remoteplus.png"
-        },
-        {
-            "name": "Wii Classic Controller",
-            "image": "classic.png"
-        },
-        {
-            "name": "Wii Classic Controller Pro",
-            "image": "classicpro.png"
-        }
-    ],
     "source": "https://archive.org/details/wii-u-operations-manual"
 }

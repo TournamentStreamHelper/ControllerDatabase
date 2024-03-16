@@ -1,7 +1,16 @@
 {
-    "name": "Nintendo Wii Remote",
+    "name": "Wii U Gamepad",
     "functions": {
-        "analog_sticks": null,
+        "analog_sticks": [
+            {
+                "name": "Left Stick",
+                "has_button": true
+            },
+            {
+                "name": "Right Stick",
+                "has_button": true
+            }
+        ],
         "digital_sticks": null,
         "action_buttons": [
             {
@@ -13,11 +22,27 @@
                 "analog": false
             },
             {
-                "name": "1",
+                "name": "X",
                 "analog": false
             },
             {
-                "name": "2",
+                "name": "Y",
+                "analog": false
+            },
+            {
+                "name": "L",
+                "analog": false
+            },
+            {
+                "name": "R",
+                "analog": false
+            },
+            {
+                "name": "ZL",
+                "analog": false
+            },
+            {
+                "name": "ZR",
                 "analog": false
             }
         ],
@@ -29,10 +54,21 @@
             "Home"
         ],
         "other_buttons": [
-            "Sync", "Power"
+            "Sync",
+            "Power",
+            "TV",
+            "Volume Slider"
         ],
         "trackpads": null,
-        "touch_screens": null,
+        "touch_screens": [
+            {
+                "resolution": [
+                    854,
+                    480
+                ],
+                "type": "resistive"
+            }
+        ],
         "directional_buttons": [
             {
                 "set": [
@@ -47,49 +83,25 @@
                 }
             }
         ],
-        "gyroscope": false,
+        "gyroscope": true,
         "accelerometer": true,
-        "ir_reciever": true,
+        "ir_reciever": false,
         "extension_ports": 1,
-        "headset_port": false,
+        "headset_port": true,
         "speaker": true,
-        "microphone": false,
+        "microphone": true,
         "cable": null,
-        "bluetooth": true,
+        "bluetooth": false,
         "2_4ghz": false,
         "rumble": "enhanced",
         "digital_to_analog_conversion": null,
         "pc_xinput": false,
         "pc_steaminput": false,
-        "native_consoles": ["wii", "wiiu"],
+        "native_consoles": [
+            "wiiu"
+        ],
         "macro": false,
         "turbo": false
     },
-    "variants": [
-        {
-            "name": "Wii Remote",
-            "image": "image.png"
-        },
-        {
-            "name": "Wii Remote + Nunchuck",
-            "image": "nunchuck.png"
-        },
-        {
-            "name": "Wii Remote + Wii Motion Plus",
-            "image": "motionplus.png"
-        },
-        {
-            "name": "Wii Remote Plus",
-            "image": "remoteplus.png"
-        },
-        {
-            "name": "Wii Classic Controller",
-            "image": "classic.png"
-        },
-        {
-            "name": "Wii Classic Controller Pro",
-            "image": "classicpro.png"
-        }
-    ],
     "source": "https://archive.org/details/wii-u-operations-manual"
 }
