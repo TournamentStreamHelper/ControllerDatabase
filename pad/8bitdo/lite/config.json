@@ -1,0 +1,135 @@
+{
+    "name": "8BitDo Lite",
+    "functions": {
+        "analog_sticks": null,
+        "digital_sticks": null,
+        "action_buttons": [
+            {
+                "name": "A",
+                "analog": false
+            },
+            {
+                "name": "B",
+                "analog": false
+            },
+            {
+                "name": "X",
+                "analog": false
+            },
+            {
+                "name": "Y",
+                "analog": false
+            },
+            {
+                "name": "L",
+                "analog": false
+            },
+            {
+                "name": "R",
+                "analog": false
+            },
+            {
+                "name": "L2",
+                "analog": false
+            },
+            {
+                "name": "R2",
+                "analog": false
+            },
+            {
+                "name": "L3",
+                "analog": false
+            },
+            {
+                "name": "R3",
+                "analog": false
+            }
+        ],
+        "menu_buttons": [
+            "-",
+            "+"
+        ],
+        "system_buttons": [
+            "Star",
+            "Home"
+        ],
+        "other_buttons": [
+            "Sync",
+            "Mode Switch"
+        ],
+        "trackpads": null,
+        "touch_screens": null,
+        "directional_buttons": [
+            {
+                "set": [
+                    "Left Stick Up",
+                    "Left Stick Down",
+                    "Left Stick Left",
+                    "Left Stick Right"
+                ],
+                "socd_prevention": {
+                    "hardware": false,
+                    "software": null
+                }
+            },
+            {
+                "set": [
+                    "Right Stick Up",
+                    "Right Stick Down",
+                    "Right Stick Left",
+                    "Right Stick Right"
+                ],
+                "socd_prevention": {
+                    "hardware": false,
+                    "software": null
+                }
+            },
+            {
+                "set": [
+                    "D-Pad Up",
+                    "D-Pad Down",
+                    "D-Pad Left",
+                    "D-Pad Right"
+                ],
+                "socd_prevention": {
+                    "hardware": false,
+                    "software": null
+                }
+            }
+        ],
+        "gyroscope": false,
+        "accelerometer": false,
+        "ir_reciever": false,
+        "extension_ports": 0,
+        "headset_port": false,
+        "speaker": false,
+        "microphone": false,
+        "cable": {
+            "interface": "USB-C",
+            "removable": true
+        },
+        "bluetooth": true,
+        "2_4ghz": false,
+        "rumble": null,
+        "digital_to_analog_conversion": [
+            {
+                "emulated_analog": "Left Stick",
+                "type": "8_way",
+                "modifier_buttons": 0
+            },
+            {
+                "emulated_analog": "Right Stick",
+                "type": "8_way",
+                "modifier_buttons": 0
+            }
+        ],
+        "pc_xinput": true,
+        "pc_steaminput": true,
+        "native_consoles": [
+            "nsw"
+        ],
+        "macro": false,
+        "turbo": true
+    },
+    "source": "https://download.8bitdo.com/Manual/Controller/Lite/Lite_Manual.pdf"
+}
