@@ -36,7 +36,11 @@ jobs:
           generate-schema-doc --config template_name=md_nested ./.schema/manufacturer.json ./_docs/manufacturer.md
           generate-schema-doc --config template_name=md_nested ./.schema/category.json ./_docs/category.md
 
-      - run: git pull ${{ steps.extract_branch.outputs.branch }} current
+      - run: |
+        git stash
+        git pull ${{ steps.extract_branch.outputs.branch }} current
+        git checkout current
+        git stash pop
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
