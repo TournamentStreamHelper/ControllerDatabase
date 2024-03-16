@@ -90,5 +90,6 @@
             "name": "Wii Classic Controller Pro",
             "image": "classicpro.png"
         }
-    ]
+    ],
+    "source": "https://archive.org/details/wii-u-operations-manual"
 }
