@@ -36,7 +36,8 @@ jobs:
           generate-schema-doc --config template_name=md_nested ./.schema/manufacturer.json ./_docs/manufacturer.md
           generate-schema-doc --config template_name=md_nested ./.schema/category.json ./_docs/category.md
 
-      - run: |
+      - name: Pull current branch
+        run: |
         git stash
         git pull ${{ steps.extract_branch.outputs.branch }} current
         git checkout current
