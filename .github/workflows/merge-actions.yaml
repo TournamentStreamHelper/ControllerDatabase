@@ -7,6 +7,8 @@ jobs:
   generate_doc:
     name: Generate the documentation from the JSON Schemas
     runs-on: ${{ matrix.os }}
+    env:
+      GH_TOKEN: ${{ github.token }}
     strategy:
       fail-fast: false
       matrix:
@@ -64,8 +66,6 @@ jobs:
           branch: merge/${{ github.run_id }}
       - name: Merge Pull Request
         uses: peter-evans/enable-pull-request-automerge@v3
-        env:
-          GH_TOKEN: ${{ github.token }}
         with:
           token: ${{ secrets.PAT }}
           pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
