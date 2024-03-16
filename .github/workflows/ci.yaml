@@ -38,10 +38,10 @@ jobs:
 
       - name: Pull current branch
         run: |
-        git stash
-        git pull ${{ steps.extract_branch.outputs.branch }} current
-        git checkout current
-        git stash pop
+          git stash
+          git pull ${{ steps.extract_branch.outputs.branch }} current
+          git checkout current
+          git stash pop
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
