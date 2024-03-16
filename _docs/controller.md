@@ -1423,4 +1423,4 @@ Note: Must include a name for the base variant
 </details>
 
 ----------------------------------------------------------------------------------------------------------------------------
-Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2024-03-16 at 01:05:30 +0100
+Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2024-03-16 at 00:28:23 +0000
