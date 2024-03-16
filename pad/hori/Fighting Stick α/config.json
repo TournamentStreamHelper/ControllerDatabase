@@ -1,0 +1,94 @@
+{
+    "name": "Hori Fighting Stick α for PlayStation 5",
+    "functions": {
+        "analog_sticks": null,
+        "digital_sticks": null,
+        "action_buttons": [
+            {
+                "name": "Square",
+                "analog": false
+            },
+            {
+                "name": "Circle",
+                "analog": false
+            },
+            {
+                "name": "Cross",
+                "analog": false
+            },
+            {
+                "name": "Triangle",
+                "analog": false
+            },
+            {
+                "name": "L1",
+                "analog": false
+            },
+            {
+                "name": "R1",
+                "analog": false
+            },
+            {
+                "name": "L2",
+                "analog": false
+            },
+            {
+                "name": "R2",
+                "analog": false
+            },
+            {
+                "name": "L3",
+                "analog": false
+            },
+            {
+                "name": "R3",
+                "analog": false
+            }
+        ],
+        "menu_buttons": ["Options"],
+        "system_buttons": ["Create", "PS Button"],
+        "other_buttons": ["Function", "Tournament Lock"],
+        "trackpads": [ 
+            {
+            "name": "Trackpad",
+            "clickable": true
+            }
+        ],
+        "touch_screens": null,
+        "directional_buttons": [
+            {
+                "set": [
+                    "Up",
+                    "Down",
+                    "Left",
+                    "Right"
+                ],
+                "socd_prevention": {
+                    "hardware": true,
+                    "software": null
+                }
+            }
+        ],
+        "gyroscope": false,
+        "accelerometer": false,
+        "ir_reciever": false,
+        "extension_ports": 0,
+        "headset_port": true,
+        "speaker": false,
+        "microphone": false,
+        "cable": {
+            "interface": "USB-A",
+            "removable": false
+        },
+        "bluetooth": false,
+        "2_4ghz": false,
+        "rumble": null,
+        "digital_to_analog_conversion": null,
+        "pc_xinput": true,
+        "pc_steaminput": true,
+        "native_consoles": ["ps4","ps5"],
+        "_comment": "Wolf, the fighting alpha also has an xbox version available. Please fill out this section like you did with 3DS on variants.",
+        "macro": true,
+        "turbo": false
+    }
+}
