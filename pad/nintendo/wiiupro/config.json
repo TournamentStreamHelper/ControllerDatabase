@@ -1,0 +1,97 @@
+{
+    "name": "Wii U Pro Controller",
+    "functions": {
+        "analog_sticks": [
+            {
+                "name": "Left Stick",
+                "has_button": true
+            },
+            {
+                "name": "Right Stick",
+                "has_button": true
+            }
+        ],
+        "digital_sticks": null,
+        "action_buttons": [
+            {
+                "name": "A",
+                "analog": false
+            },
+            {
+                "name": "B",
+                "analog": false
+            },
+            {
+                "name": "X",
+                "analog": false
+            },
+            {
+                "name": "Y",
+                "analog": false
+            },
+            {
+                "name": "L",
+                "analog": false
+            },
+            {
+                "name": "R",
+                "analog": false
+            },
+            {
+                "name": "ZL",
+                "analog": false
+            },
+            {
+                "name": "ZR",
+                "analog": false
+            }
+        ],
+        "menu_buttons": [
+            "-",
+            "+"
+        ],
+        "system_buttons": [
+            "Home"
+        ],
+        "other_buttons": [
+            "Sync",
+            "Power"
+        ],
+        "trackpads": null,
+        "touch_screens": null,
+        "directional_buttons": [
+            {
+                "set": [
+                    "Up",
+                    "Down",
+                    "Left",
+                    "Right"
+                ],
+                "socd_prevention": {
+                    "hardware": true,
+                    "software": null
+                }
+            }
+        ],
+        "gyroscope": false,
+        "accelerometer": false,
+        "ir_reciever": false,
+        "extension_ports": 0,
+        "headset_port": false,
+        "speaker": false,
+        "microphone": false,
+        "cable": null,
+        "bluetooth": true,
+        "2_4ghz": false,
+        "rumble": "enhanced",
+        "digital_to_analog_conversion": null,
+        "pc_xinput": false,
+        "pc_steaminput": false,
+        "native_consoles": [
+            "wiiu"
+        ],
+        "macro": false,
+        "turbo": false
+    },
+    "source": "https://archive.org/details/wii-u-operations-manual"
+}
