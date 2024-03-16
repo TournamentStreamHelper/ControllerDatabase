@@ -2,18 +2,17 @@ on:
   push:
     branches:
       - main
-
+      - docs
 jobs:
   generate_doc:
     name: Generate the documentation from the JSON Schemas
     runs-on: ${{ matrix.os }}
-    env:
-      GH_TOKEN: ${{ github.token }}
     strategy:
       fail-fast: false
       matrix:
         os: ["ubuntu-20.04"]
-    permissions: write-all
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
@@ -24,11 +23,6 @@ jobs:
         shell: bash
         run: echo "branch=${GITHUB_REF#refs/heads/}" >> $GITHUB_OUTPUT
         id: extract_branch
-
-      # - name: Create new branch
-      #   run: |
-      #     git fetch
-      #     git checkout merge/${{ github.run_id }}
 
       - name: Install json-schema-for-humans
         run: pip install json-schema-for-humans
@@ -42,30 +36,18 @@ jobs:
           generate-schema-doc --config template_name=md_nested ./.schema/manufacturer.json ./_docs/manufacturer.md
           generate-schema-doc --config template_name=md_nested ./.schema/category.json ./_docs/category.md
 
-      # - name: Commit files
-      #   run: |
-      #     git config --local user.email "action@github.com"
-      #     git config --local user.name "GitHub Action"
-      #     git add *
-      #     if ! git diff-index --quiet HEAD; then
-      #       git commit -m "Update documentation" -a
-      #     fi
+      - run: git pull
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add *
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "Update documentation" -a
+          fi
 
-      # - name: push changes
-      #   uses: ad-m/github-push-action@master
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     branch: merge/${{ github.run_id }}
-
-      - name: Create Pull Request
-        id: cpr
-        uses: peter-evans/create-pull-request@v6
+      - name: push changes
+        uses: ad-m/github-push-action@master
         with:
-          commit-message: |
-            Update documentation
-          branch: merge/${{ github.run_id }}
-      - name: Merge Pull Request
-        uses: peter-evans/enable-pull-request-automerge@v3
-        with:
-          token: ${{ secrets.PAT }}
-          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ steps.extract_branch.outputs.branch }}
