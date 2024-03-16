@@ -3,8 +3,9 @@ name: Generate the documentation from the JSON Schemas
 on:
   push:
     branches:
+      - *
+    paths-ignore:
       - main
-      - docs
 jobs:
   generate_doc:
     runs-on: ${{ matrix.os }}
