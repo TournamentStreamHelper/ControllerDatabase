@@ -96,10 +96,10 @@
         "speaker": false,
         "microphone": false,
         "cable": {
-            "interface": "USB-A",
-            "removable": false
+            "interface": "USB-C",
+            "removable": true
         },
-        "bluetooth": false,
+        "bluetooth": true,
         "2_4ghz": false,
         "rumble": null,
         "digital_to_analog_conversion": [
@@ -121,5 +121,6 @@
         ],
         "macro": false,
         "turbo": false
-    }
+    },
+    "source": "https://www.8bitdo.com/lite/"
 }
