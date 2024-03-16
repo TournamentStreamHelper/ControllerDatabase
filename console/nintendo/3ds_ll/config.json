@@ -1,5 +1,5 @@
 {
-    "name": "Nintendo 3DS",
+    "name": "Nintendo 3DS XL",
     "functions": {
         "analog_sticks": [
             {
@@ -42,20 +42,13 @@
             "Home"
         ],
         "other_buttons": [
-            "Power",
-            "3D Slider",
-            "Wireless Switch"
+            "Power", "3D Slider", "Wireless Switch"
         ],
         "trackpads": null,
-        "touch_screens": [
-            {
-                "resolution": [
-                    320,
-                    240
-                ],
-                "type": "resistive"
-            }
-        ],
+        "touch_screens": [{
+            "resolution": [320,240],
+            "type": "resistive"
+        }],
         "directional_buttons": [
             {
                 "set": [
@@ -90,11 +83,11 @@
     },
     "variants": [
         {
-            "name": "Nintendo 3DS",
+            "name": "Nintendo 3DS XL",
             "image": "image.png"
         },
         {
-            "name": "Circle Pad Pro",
+            "name": "Circle Pad Pro XL",
             "image": "circlepro.png"
         }
     ]

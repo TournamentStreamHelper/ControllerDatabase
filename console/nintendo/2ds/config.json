@@ -1,5 +1,5 @@
 {
-    "name": "Nintendo 3DS",
+    "name": "Nintendo 2DS",
     "functions": {
         "analog_sticks": [
             {
@@ -43,8 +43,7 @@
         ],
         "other_buttons": [
             "Power",
-            "3D Slider",
-            "Wireless Switch"
+            "Volume Slider"
         ],
         "trackpads": null,
         "touch_screens": [
@@ -87,15 +86,5 @@
         "native_consoles": null,
         "macro": false,
         "turbo": false
-    },
-    "variants": [
-        {
-            "name": "Nintendo 3DS",
-            "image": "image.png"
-        },
-        {
-            "name": "Circle Pad Pro",
-            "image": "circlepro.png"
-        }
-    ]
+    }
 }
