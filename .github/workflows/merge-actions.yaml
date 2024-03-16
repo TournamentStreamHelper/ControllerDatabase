@@ -5,8 +5,6 @@ on:
 
 jobs:
   generate_doc:
-    needs:
-      - validate
     name: Generate the documentation from the JSON Schemas
     runs-on: ${{ matrix.os }}
     strategy:
