@@ -24,6 +24,11 @@ jobs:
         run: echo "branch=${GITHUB_HEAD_REF#refs/heads/}" >> $GITHUB_OUTPUT
         id: extract_branch
 
+      - name: Pull current branch
+        run: |
+          git pull origin ${{ steps.extract_branch.outputs.branch }}
+          git checkout ${{ steps.extract_branch.outputs.branch }}
+
       - name: Install json-schema-for-humans
         run: pip install json-schema-for-humans
 
@@ -36,13 +41,6 @@ jobs:
           generate-schema-doc --config template_name=md_nested ./.schema/manufacturer.json ./_docs/manufacturer.md
           generate-schema-doc --config template_name=md_nested ./.schema/category.json ./_docs/category.md
 
-      - name: Pull current branch
-        run: |
-          git stash
-          git pull origin ${{ steps.extract_branch.outputs.branch }}
-          git checkout ${{ steps.extract_branch.outputs.branch }}
-          git config pull.rebase false
-          git stash pop
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
