@@ -46,8 +46,8 @@
                 "analog": true
             }
         ],
-        "menu_buttons": ["Create", "Options"],
-        "system_buttons": ["Share", "Guide", "Mute"],
+        "menu_buttons": ["Options"],
+        "system_buttons": ["Create", "Share", "Guide", "Mute"],
         "other_buttons": null,
         "trackpads": [ 
             {
