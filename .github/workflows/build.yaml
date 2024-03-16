@@ -1,0 +1,51 @@
+on:
+  pull_request:
+    branches:
+      - main
+name: Generate the documentation from the JSON Schema
+jobs:
+  validate:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: ["ubuntu-20.04"]
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+      
+      - name: Extract branch name
+        shell: bash
+        run: echo "branch=${GITHUB_REF#refs/heads/}" >> $GITHUB_OUTPUT
+        id: extract_branch
+
+      - name: Install json-schema-for-humans
+        run: pip install -r json-schema-for-humans
+
+      - name: Create documentation directory
+        run: mkdir -p _docs
+
+      - name: Generate the documentation
+        run: |
+          generate-schema-doc --config template_name=md_nested ./.schema/controller.json ./_docs/controller.md
+          generate-schema-doc --config template_name=md_nested ./.schema/manufacturer.json ./_docs/manufacturer.md
+          generate-schema-doc --config template_name=md_nested ./.schema/category.json ./_docs/category.md
+
+      - run: git pull
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add *
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "Update documentation" -a
+          fi
+
+      - name: push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ steps.extract_branch.outputs.branch }}
