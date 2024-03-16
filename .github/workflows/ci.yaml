@@ -39,8 +39,8 @@ jobs:
       - name: Pull current branch
         run: |
           git stash
-          git pull ${{ steps.extract_branch.outputs.branch }} current
-          git checkout current
+          git pull origin ${{ steps.extract_branch.outputs.branch }}
+          git checkout ${{ steps.extract_branch.outputs.branch }}
           git stash pop
       - name: Commit files
         run: |
