@@ -34,8 +34,8 @@ jobs:
       - name: Generate the documentation
         run: |
           generate-schema-doc --config template_name=md_nested ./.schema/controller.json "./.wiki/Controller Definition.md"
-          generate-schema-doc --config template_name=md_nested ./.schema/manufacturer.json ./.wiki/Manufacturer Definition.md
-          generate-schema-doc --config template_name=md_nested ./.schema/category.json ./.wiki/Category Definition.md
+          generate-schema-doc --config template_name=md_nested ./.schema/manufacturer.json "./.wiki/Manufacturer Definition.md"
+          generate-schema-doc --config template_name=md_nested ./.schema/category.json "./.wiki/Category Definition.md"
 
       - run: git pull
       - name: Commit files
