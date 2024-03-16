@@ -41,6 +41,7 @@ jobs:
           git stash
           git pull origin ${{ steps.extract_branch.outputs.branch }}
           git checkout ${{ steps.extract_branch.outputs.branch }}
+          git config pull.rebase false
           git stash pop
       - name: Commit files
         run: |
