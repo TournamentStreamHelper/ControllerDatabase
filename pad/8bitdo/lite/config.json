@@ -1,0 +1,125 @@
+{
+    "name": "8BitDo Lite",
+    "functions": {
+        "analog_sticks": null,
+        "digital_sticks": null,
+        "action_buttons": [
+            {
+                "name": "A",
+                "analog": false
+            },
+            {
+                "name": "B",
+                "analog": false
+            },
+            {
+                "name": "X",
+                "analog": false
+            },
+            {
+                "name": "Y",
+                "analog": false
+            },
+            {
+                "name": "L",
+                "analog": false
+            },
+            {
+                "name": "R",
+                "analog": false
+            },
+            {
+                "name": "ZL",
+                "analog": false
+            },
+            {
+                "name": "ZR",
+                "analog": false
+            }
+        ],
+        "menu_buttons": [
+            "-",
+            "+"
+        ],
+        "system_buttons": [
+            "Capture",
+            "Home"
+        ],
+        "other_buttons": [
+            "Sync"
+        ],
+        "trackpads": null,
+        "touch_screens": null,
+        "directional_buttons": [
+            {
+                "set": [
+                    "LS-Up",
+                    "LS-Down",
+                    "LS-Left",
+                    "LS-Right"
+                ],
+                "socd_prevention": {
+                    "hardware": true,
+                    "software": null
+                }
+            },
+            {
+                "set": [
+                    "RS-Up",
+                    "RS-Down",
+                    "RS-Left",
+                    "RS-Right"
+                ],
+                "socd_prevention": {
+                    "hardware": true,
+                    "software": null
+                }
+            },
+            {
+                "set": [
+                    "DPad-Up",
+                    "DPad-Down",
+                    "DPad-Left",
+                    "DPad-Right"
+                ],
+                "socd_prevention": {
+                    "hardware": false,
+                    "software": null
+                }
+            }
+        ],
+        "gyroscope": false,
+        "accelerometer": false,
+        "ir_reciever": false,
+        "extension_ports": 0,
+        "headset_port": false,
+        "speaker": false,
+        "microphone": false,
+        "cable": {
+            "interface": "USB-A",
+            "removable": false
+        },
+        "bluetooth": false,
+        "2_4ghz": false,
+        "rumble": null,
+        "digital_to_analog_conversion": [
+            {
+                "emulated_analog": "Left Stick",
+                "type": "8_way",
+                "modifier_buttons": 0
+            },
+            {
+                "emulated_analog": "Right Stick",
+                "type": "8_way",
+                "modifier_buttons": 0
+            }
+        ],
+        "pc_xinput": true,
+        "pc_steaminput": true,
+        "native_consoles": [
+            "nsw"
+        ],
+        "macro": false,
+        "turbo": false
+    }
+}
