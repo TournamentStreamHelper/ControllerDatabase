@@ -35,6 +35,14 @@
             {
                 "name": "ZR",
                 "analog": false
+            },
+            {
+                "name": "LS",
+                "analog": false
+            },
+            {
+                "name": "RS",
+                "analog": false
             }
         ],
         "menu_buttons": [
@@ -59,7 +67,7 @@
                     "LS-Right"
                 ],
                 "socd_prevention": {
-                    "hardware": true,
+                    "hardware": false,
                     "software": null
                 }
             },
@@ -71,7 +79,7 @@
                     "RS-Right"
                 ],
                 "socd_prevention": {
-                    "hardware": true,
+                    "hardware": false,
                     "software": null
                 }
             },
