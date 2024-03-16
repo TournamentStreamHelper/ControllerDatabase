@@ -80,17 +80,14 @@ jobs:
           files: "*/*/*/config.json"
       - name: Send status
         if: ${{ success() }}
-            # set the merge commit status check
-            # using GitHub REST API
-            # see https://docs.github.com/en/rest/reference/repos#create-a-commit-status
-            run: |
-              curl --request POST \
-              --url https://api.github.com/repos/${{ github.repository }}/statuses/${{ github.sha }} \
-              --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' \
-              --header 'content-type: application/json' \
-              --data '{
-                "context": "Validate JSON Files against schemas",
-                "state": "success",
-                "description": "JSON Files are valid",
-                "target_url": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-              }'
+        run: |
+          curl --request POST \
+          --url https://api.github.com/repos/${{ github.repository }}/statuses/${{ github.sha }} \
+          --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' \
+          --header 'content-type: application/json' \
+          --data '{
+            "context": "Validate JSON Files against schemas",
+            "state": "success",
+            "description": "JSON Files are valid",
+            "target_url": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          }'
