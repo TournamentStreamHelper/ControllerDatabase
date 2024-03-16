@@ -23,7 +23,7 @@ jobs:
         id: extract_branch
 
       - name: Install json-schema-for-humans
-        run: pip install -r json-schema-for-humans
+        run: pip install json-schema-for-humans
 
       - name: Create documentation directory
         run: mkdir -p _docs
