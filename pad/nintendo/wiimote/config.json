@@ -61,7 +61,9 @@
         "digital_to_analog_conversion": null,
         "pc_xinput": false,
         "pc_steaminput": false,
-        "native_consoles": ["wii", "wiiu"]
+        "native_consoles": ["wii", "wiiu"],
+        "macro": false,
+        "turbo": false
     },
     "variants": [
         {

@@ -1,0 +1,28 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "file:///c:/Users/wolfy/Git/ControllerDatabase/*/config.json"
+            ],
+            "url": ".schema/category.json"
+        },
+        {
+            "fileMatch": [
+                "file:///c:/Users/wolfy/Git/ControllerDatabase/*/*/config.json"
+            ],
+            "url": ".schema/manufacturer.json"
+        },
+        {
+            "fileMatch": [
+                "file:///c:/Users/wolfy/Git/ControllerDatabase/*/*/*/config.json"
+            ],
+            "url": ".schema/controller.json"
+        },
+        {
+            "fileMatch": [
+                ".schema/*.json"
+            ],
+            "url": "https://json-schema.org/draft/2020-12/schema"
+        }
+    ]
+}

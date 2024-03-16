@@ -1,0 +1,558 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/ControllerDefinition",
+    "definitions": {
+        "ControllerDefinition": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "title": "Name",
+                    "description": "Name of the device"
+                },
+                "functions": {
+                    "$ref": "#/definitions/Functions"
+                },
+                "source": {
+                    "type": "string",
+                    "format": "uri",
+                    "pattern": "https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)",
+                    "title": "Source",
+                    "description": "Main source for information on the controller specifications\nIdeally either a link to a manual on the Internet Archive or to an archived webpage on the Wayback Machine"
+                },
+                "variants": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Variant"
+                    },
+                    "uniqueItems": true
+                }
+            },
+            "required": [
+                "functions",
+                "name"
+            ],
+            "title": "Controller",
+            "description": "Controller Definition\nNote: Any consideration related to buttons and their categorization should be related to the default mapping of said buttons"
+        },
+        "Functions": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "analog_sticks": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "items": {
+                        "$ref": "#/definitions/AnalogStick"
+                    },
+                    "uniqueItems": true
+                },
+                "digital_sticks": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "items": {
+                        "$ref": "#/definitions/DigitalStick"
+                    },
+                    "uniqueItems": true
+                },
+                "action_buttons": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "items": {
+                        "$ref": "#/definitions/ActionButton"
+                    },
+                    "uniqueItems": true
+                },
+                "menu_buttons": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "items": {
+                        "type": "string"
+                    },
+                    "uniqueItems": true,
+                    "title": "Menu Buttons",
+                    "description": "Buttons traditionally mapped to open an in-game menu\ne.g.: Start, Select"
+                },
+                "system_buttons": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "items": {
+                        "type": "string"
+                    },
+                    "uniqueItems": true,
+                    "title": "System Buttons",
+                    "description": "Buttons traditionally mapped to open a system menu or perform an OS-level operation\ne.g.: Share, Home"
+                },
+                "other_buttons": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "items": {
+                        "type": "string"
+                    },
+                    "uniqueItems": true,
+                    "title": "Other Buttons",
+                    "description": "Buttons which do not perform any software-level or OS-level operation on the console or PC they are connected to, and are not recognized as buttons by the software or OS\ne.g.: Power, Sync, Turbo, Profile"
+                },
+                "trackpads": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "items": {
+                        "$ref": "#/definitions/Trackpad"
+                    },
+                    "uniqueItems": true
+                },
+                "touch_screens": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "items": {
+                        "$ref": "#/definitions/TouchScreen"
+                    },
+                    "uniqueItems": true
+                },
+                "directional_buttons": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "items": {
+                        "$ref": "#/definitions/DirectionalButton"
+                    },
+                    "uniqueItems": true
+                },
+                "gyroscope": {
+                    "type": "boolean",
+                    "title": "Gyroscope",
+                    "description": "Whether or not the controller has an integrated gyroscope"
+                },
+                "accelerometer": {
+                    "type": "boolean",
+                    "title": "Accelerometer",
+                    "description": "Whether or not the controller has an integrated accelerometer"
+                },
+                "macro": {
+                    "type": "boolean",
+                    "title": "Macro",
+                    "description": "Indicates if the buttons of the controller can be mapped to perform a sequence of and/or simultaneous standard button presses automatically\nNot to be confused with Turbo\nIncludes the simultaneous pressing of directional buttons"
+                },
+                "turbo": {
+                    "type": "boolean",
+                    "title": "Turbo",
+                    "description": "Indicates if the buttons of the controller can be mapped to simulate the frequent and periodic pressing and unpressing of said button when held\nNot to be confued with Macro"
+                },
+                "ir_reciever": {
+                    "type": "boolean",
+                    "title": "Infrared Receiver",
+                    "description": "Whether or not the controller has an integrated Infrared Receiver"
+                },
+                "extension_ports": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "title": "Extension Ports",
+                    "description": "Number of additional data ports present on the controller, excluding any cable port used for connecting or charging the device, or the Headset Port"
+                },
+                "headset_port": {
+                    "type": "boolean",
+                    "title": "Headset Port",
+                    "description": "Whether or not the controller has an integrated Jack headphone port"
+                },
+                "speaker": {
+                    "type": "boolean",
+                    "title": "Speaker",
+                    "description": "Whether or not the controller has an integrated speaker"
+                },
+                "microphone": {
+                    "type": "boolean",
+                    "title": "Microphone",
+                    "description": "Whether or not the controller has an integrated microphone"
+                },
+                "cable": {
+                    "$ref": "#/definitions/Cable"
+                },
+                "bluetooth": {
+                    "type": "boolean",
+                    "title": "Bluetooth",
+                    "description": "Whether or not the controller is capable to connect wirerlessly to a device via Bluetooth"
+                },
+                "2_4ghz": {
+                    "type": "boolean",
+                    "title": "2.4GHz",
+                    "description": "Whether or not the controller is capable to connect wirerlessly to a device via a 2.4GHz connection, including if said connection requires an additional dongle provided with the controller"
+                },
+                "rumble": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "enum": [
+                        "enhanced",
+                        "standard",
+                        null
+                    ],
+                    "title": "Rumble",
+                    "description": "Type of rumble functionnality offered by the controller, if it applies.\n- standard: Refers to traditional rumble motors found in the Nintendo GameCube controller for instance\n- enhanced: Refers to any kind of haptic feedback implemented other than the former, as seen for instance in the Nintendo Switch Joy-Con or the Sony Dualsense"
+                },
+                "digital_to_analog_conversion": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "items": {
+                        "$ref": "#/definitions/DigitalToAnalogConversion"
+                    },
+                    "uniqueItems": true
+                },
+                "pc_xinput": {
+                    "type": "boolean",
+                    "title": "XInput compatibility",
+                    "description": "Whether or not the controller can be recognized by Windows and Windows games as an XInput controller with no additional drivers or adapters, and as such behave as an Xbox 360 controller would"
+                },
+                "pc_steaminput": {
+                    "type": "boolean",
+                    "title": "Steam Input compatibility",
+                    "description": "Whether or not the controller can be recognized by Steam on Windows and Linux with no additional drivers or adapters, and translate the controller inputs to XInput via Steam Input"
+                },
+                "native_consoles": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "items": {
+                        "type": "string",
+                        "enum": [
+                            "ps1",
+                            "ps2",
+                            "ps3",
+                            "ps4",
+                            "ps5",
+                            "nsw",
+                            "wiiu",
+                            "wii",
+                            "ngc",
+                            "n64",
+                            "snes",
+                            "nes",
+                            "xbox",
+                            "xb360",
+                            "xb1",
+                            "xbs",
+                            "smd",
+                            "saturn",
+                            "dc"
+                        ]
+                    },
+                    "uniqueItems": true,
+                    "title": "Native Consoles",
+                    "description": "Lists the consoles on which the controller can be used without the use of an adapter, for most games.\nIn the case of the PS5, applies if the controller is recognized by the PS4 compatibility layer implemented in Street Fighter 6 and other fighting games as well."
+                }
+            },
+            "required": [
+                "2_4ghz",
+                "accelerometer",
+                "action_buttons",
+                "analog_sticks",
+                "bluetooth",
+                "cable",
+                "digital_sticks",
+                "digital_to_analog_conversion",
+                "directional_buttons",
+                "extension_ports",
+                "gyroscope",
+                "headset_port",
+                "ir_reciever",
+                "menu_buttons",
+                "microphone",
+                "native_consoles",
+                "other_buttons",
+                "pc_steaminput",
+                "pc_xinput",
+                "rumble",
+                "speaker",
+                "system_buttons",
+                "touch_screens",
+                "trackpads",
+                "macro",
+                "turbo"
+            ],
+            "title": "Functions",
+            "description": "Functionalities of the controller"
+        },
+        "ActionButton": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "analog": {
+                    "type": "boolean"
+                },
+                "clickable": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "analog",
+                "name"
+            ],
+            "title": "Action Button",
+            "description": "Button traditionally mapped to performing an action in video games (e.g. Jump, Punch, Kick, Interact…)\nCan be Analog or Digital\ne.g.: A, B, X, Y, LT, LB, RT, RB"
+        },
+        "AnalogStick": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "has_button": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "has_button",
+                "name"
+            ],
+            "title": "Analog Stick",
+            "description": "Control stick offering fine-tuned control beyond the traditional 8 directions of a directional pad\ne.g. The Left and Right stick of the Sony Dualsense"
+        },
+        "DigitalStick": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "has_button": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "has_button",
+                "name"
+            ],
+            "title": "Digital Stick",
+            "description": "Control stick only capable of transmitting up to 8 discrete inputs\ne.g. The stick of a Street Fighter II Arcade Cabinet"
+        },
+        "Cable": {
+            "type": [
+                "object",
+                "null"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "interface": {
+                    "type": "string",
+                    "enum": [
+                        "USB-A",
+                        "USB-C",
+                        "Mini USB-A",
+                        "Micro USB-A",
+                        "GameCube Controller Port"
+                    ]
+                },
+                "removable": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "interface",
+                "removable"
+            ],
+            "title": "Cable",
+            "description": "Cable or cable port allowing for a connection between a console or PC and the controller"
+        },
+        "DigitalToAnalogConversion": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "emulated_analog": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "8_way",
+                        "precision",
+                        "button"
+                    ]
+                },
+                "modifier_buttons": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "title": "Modifier Button",
+                    "description": "Number of modifier buttons whose sole purpose is to change the value of the analog output value of a button press or analog stick axis"
+                }
+            },
+            "required": [
+                "emulated_analog",
+                "modifier_buttons",
+                "type"
+            ],
+            "title": "Digital-to-Analog Conversion",
+            "description": "Digital-to-analog conversion capabilities the controller may be able to perform\n- 8_way: The device is only capable of emulating the 8 extreme cardinal inputs for said analog stick\n- button: The device is only capable of emulating the full press of said button\n- precision: The exact output of said button or analog stick axis can be controlled and fine-tuned either via hard mapping in the controller’s firmware, or using modifier buttons"
+        },
+        "DirectionalButton": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "set": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "uniqueItems": true
+                },
+                "socd_prevention": {
+                    "$ref": "#/definitions/SocdPrevention"
+                }
+            },
+            "required": [
+                "set",
+                "socd_prevention"
+            ],
+            "title": "Directional Button Set",
+            "description": "Set of Individual Buttons which, together, can transmit direction-based inputs to a game similar to a Digital Stick"
+        },
+        "SocdPrevention": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "hardware": {
+                    "type": "boolean",
+                    "title": "Hardware SOCD Prevention",
+                    "description": "Whether or not there is a hardware-based solution which may physically prevent two Simultaneously Opposite Cardinal Direction to be pressed at the same time, e.g. a D-Pad’s pivot"
+                },
+                "software": {
+                    "$ref": "#/definitions/SoftwareSOCD"
+                }
+            },
+            "required": [
+                "hardware",
+                "software"
+            ],
+            "title": "SOCD Prevention",
+            "description": "Hardware or software-based solutions which may prevent sending two Simultaneously Opposite Cardinal Direction inputs to the console or PC"
+        },
+        "SoftwareSOCD": {
+            "type": [
+                "object",
+                "null"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "left_right": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "enum": [
+                            "neutral",
+                            "last_input",
+                            "disable"
+                        ]
+                    },
+                    "uniqueItems": true
+                },
+                "up_down": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "enum": [
+                            "neutral",
+                            "last_input",
+                            "first_input",
+                            "disable",
+                            "up"
+                        ]
+                    },
+                    "uniqueItems": true
+                }
+            },
+            "required": [
+                "left_right",
+                "up_down"
+            ],
+            "title": "Software SOCD Prevention",
+            "description": "List of software-based solutions offered by the controller’s firmware which may prevent sending two Simultaneously Opposite Cardinal Direction inputs to the console or PC, if any\n- neutral: Pressing Left+Right or Up+Down cancels the input and sends a Neutral position to the console or PC\n- last_input: Pressing Left+Right or Up+Down sends the last pressed direction to the console or PC\n- first_input: Pressing Left+Right or Up+Down will ignore the new direction being sent and sends the first pressed direction to the console or PC\n- up: (Only for Up+Down) Pressing Up+Down always sends Up to to the console or PC\n- disable: Software SOCD Prevention can be disabled, leading to both Left & Right inputs or Up & Down inputs being sent to the console or PC"
+        },
+        "TouchScreen": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "resolution": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer",
+                        "minimum": 0
+                    },
+                    "minItems": 2,
+                    "maxItems": 2
+                },
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "resistive",
+                        "capacitive"
+                    ]
+                }
+            },
+            "required": [
+                "resolution",
+                "type"
+            ],
+            "title": "Touch Screen"
+        },
+        "Trackpad": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "clickable": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "clickable",
+                "name"
+            ],
+            "title": "Trackpad",
+            "description": "Tactile sensor commonly found on laptops to emulate a mouse"
+        },
+        "Variant": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "image": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "image",
+                "name"
+            ],
+            "title": "Variant",
+            "description": "A different way to use the controller than the one seen on the base image.png file, usually through the use of additional accessories which may attach to the controller\nMay be omitted if the controller only has one variant\nNote: Must include a name for the base variant"
+        }
+    }
+}
