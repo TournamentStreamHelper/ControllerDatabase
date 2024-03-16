@@ -16,7 +16,7 @@ jobs:
         uses: dsanders11/json-schema-validate-action@v1.1.0
         with:
           files: ".schema/*.json"
-          schema: "http://json-schema.org/draft-06/schema#"
+          schema: ".schema/.json_schema.json"
       - name: Validate Category JSON
         uses: dsanders11/json-schema-validate-action@v1.1.0
         with:
