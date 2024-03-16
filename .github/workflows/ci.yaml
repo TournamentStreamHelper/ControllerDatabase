@@ -26,9 +26,8 @@ jobs:
 
       - name: Pull current branch
         run: |
-          git config pull.rebase false
-          git pull origin ${{ steps.extract_branch.outputs.branch }}
-          git checkout ${{ steps.extract_branch.outputs.branch }}
+          git fetch
+          git checkout -b ${{ steps.extract_branch.outputs.branch }} origin/${{ steps.extract_branch.outputs.branch }}
 
       - name: Install json-schema-for-humans
         run: pip install json-schema-for-humans
