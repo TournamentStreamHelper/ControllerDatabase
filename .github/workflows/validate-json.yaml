@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Download JSON Schema specification
         run: |
-          curl "http://json-schema.org/draft-06/schema#" | sed 's/"$schema": "http://json-schema.org/draft-06/schema#"/"$schema": "current_schema"/' > .schema/.json_schema.json
+          curl "http://json-schema.org/draft-06/schema#" | sed 's/"$schema": "http:\/\/json-schema.org\/draft-06\/schema#"/"$schema": "current_schema"/' > .schema/.json_schema.json
       - name: Validate JSON Schema
         uses: dsanders11/json-schema-validate-action@v1.1.0
         with:
