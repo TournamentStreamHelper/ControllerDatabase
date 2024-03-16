@@ -58,7 +58,7 @@ on:
       #     branch: merge/${{ github.run_id }}
 
       - name: Create Pull Request
-      id: cpr
+        id: cpr
         uses: peter-evans/create-pull-request@v6
         with:
           commit-message: |
