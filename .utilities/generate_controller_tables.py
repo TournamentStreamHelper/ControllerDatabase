@@ -100,6 +100,7 @@ def process_manufacturer(path, level=1):
     with open(f"{path}/config.json", "rt", encoding="utf-8") as json_file:
         manufacturer = json.loads(json_file.read())
     list_folders = glob.glob(f"{path}/*/")
+    list_folders.sort()
     if not list_folders:
         return("")
     result = f"{'#'*level} {manufacturer['name']}\n\n<details>\n\n"
@@ -112,6 +113,7 @@ def process_category(path, level=1):
     with open(f"{path}/config.json", "rt", encoding="utf-8") as json_file:
         category = json.loads(json_file.read())
     list_folders = glob.glob(f"{path}/*/")
+    list_folders.sort()
     if not list_folders:
         return("")
     result = f"{'#'*level} {category['name']}\n\n*{category['desc']}*\n\n<details>\n\n"
