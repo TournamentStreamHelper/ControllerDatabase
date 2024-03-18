@@ -2,7 +2,6 @@ on:
   push:
     branches:
       - main
-      - docs
 jobs:
   generate_doc:
     name: Generate the documentation from the JSON Schemas
