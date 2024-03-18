@@ -111,10 +111,9 @@ def process_manufacturer(path, level=1):
     list_folders.sort()
     if not list_folders:
         return("")
-    result = f"{'#'*level} {manufacturer['name']}\n\n<details>\n\n"
+    result = f"{'#'*level} {manufacturer['name']}\n\n"
     for folder in list_folders:
         result += process_controller(folder.replace("\\", "/"), level+1)
-    result += "</details>\n\n"
     return(result)
 
 def process_category(path, level=1):
@@ -124,10 +123,9 @@ def process_category(path, level=1):
     list_folders.sort()
     if not list_folders:
         return("")
-    result = f"{'#'*level} {category['name']}\n\n*{category['desc']}*\n\n<details>\n\n"
+    result = f"{'#'*level} {category['name']}\n\n*{category['desc']}*\n\n"
     for folder in list_folders:
         result += process_manufacturer(folder.replace("\\", "/"), level+1)
-    result += "</details>\n\n"
     return(result)
 
 def process_all():
