@@ -67,7 +67,13 @@ def process_controller(path, level = 1):
     with open(f"{path}/config.json", "rt", encoding="utf-8") as json_file:
         controller = json.loads(json_file.read())
     image_url = f"https://raw.githubusercontent.com/Wolfy76700/ControllerDatabase/main/{path}/image.png"
-    result = f"{'#'*level} {controller['name']}\n\n![{controller['name']}]({image_url})\n\n"
+    result = f"{'#'*level} {controller['name']}\n"
+    result += f"""
+<picture>
+<img src="{image_url}" alt="{controller['name']}" height="250">
+</picture>
+
+"""
     if controller.get("source"):
         result += f"*More information: {controller.get('source')}*\n\n"
     result += f"""{'#'*(level+1)} Functions
@@ -88,7 +94,9 @@ def process_controller(path, level = 1):
         for variant in controller.get("variants"):
             result += f"""{'#'*(level+2)} {variant['name']}
 
-![{variant['name']}](https://raw.githubusercontent.com/Wolfy76700/ControllerDatabase/main/{path}/{variant['image']})
+<picture>
+<img src="https://raw.githubusercontent.com/Wolfy76700/ControllerDatabase/main/{path}/{variant['image']}" alt="{variant['name']}" height="150"/>
+</picture>
 
 """
         result += f"</details>\n\n"
