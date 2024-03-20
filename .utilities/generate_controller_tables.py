@@ -14,6 +14,10 @@ def bool_to_emoji(boolean: bool):
 
 def str_to_emoji(string: str):
     if string:
+        if string == "+":
+            return("➕")
+        if string == "-":
+            return("➖")
         return(string)
     else:
         return("❌")
@@ -160,7 +164,7 @@ def process_list_string(list_str, title="Menu Buttons", level = 1):
 
 """
         for button_name in list_str:
-            result += f"- {button_name}\n"
+            result += f"- {str_to_emoji(button_name)}\n"
         result += "\n"
     return(result)
 
