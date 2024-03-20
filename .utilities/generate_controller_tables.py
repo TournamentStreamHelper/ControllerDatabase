@@ -334,7 +334,7 @@ def process_all():
     return(result)
 
 def create_consoles_table():
-    result = "| Codename | Name |\n| :---: | :--- |\n"
+    result = "| ID | Name |\n| :---: | :--- |\n"
     for console in consoles_dict.keys():
         result += f"| `{console}` | {consoles_dict[console]} |\n"
     with open(".wiki/Console IDs.md", "wt", encoding="utf-8") as md_file:
