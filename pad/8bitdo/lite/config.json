@@ -68,7 +68,7 @@
                     "Left Stick Right"
                 ],
                 "socd_prevention": {
-                    "hardware": false,
+                    "hardware": true,
                     "software": null
                 }
             },
@@ -80,7 +80,7 @@
                     "Right Stick Right"
                 ],
                 "socd_prevention": {
-                    "hardware": false,
+                    "hardware": true,
                     "software": null
                 }
             },
