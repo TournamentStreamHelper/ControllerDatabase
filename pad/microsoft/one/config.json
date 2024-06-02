@@ -1,0 +1,84 @@
+{
+    "name": "Microsoft Xbox Wireless Controller (Xbox One variant - Model 1)",
+    "functions": {
+        "analog_sticks": [
+            {
+                "name": "Left Stick",
+                "has_button": true
+            },
+            {
+                "name": "Right Stick",
+                "has_button": true
+            }
+        ],
+        "digital_sticks": null,
+        "action_buttons": [
+            {
+                "name": "A",
+                "analog": false
+            },
+            {
+                "name": "B",
+                "analog": false
+            },
+            {
+                "name": "X",
+                "analog": false
+            },
+            {
+                "name": "Y",
+                "analog": false
+            },
+            {
+                "name": "LB",
+                "analog": false
+            },
+            {
+                "name": "RB",
+                "analog": false
+            },
+            {
+                "name": "LT",
+                "analog": true
+            },
+            {
+                "name": "RT",
+                "analog": true
+            }
+        ],
+        "menu_buttons": ["Back", "Menu"],
+        "system_buttons": ["Guide"],
+        "other_buttons": ["Sync"],
+        "trackpads": null,
+        "touch_screens": null,
+        "directional_buttons": [
+            {
+                "set": ["Up", "Down", "Left", "Right"],
+                "socd_prevention": {
+                    "hardware": true,
+                    "software": null
+                }
+            }
+        ],
+        "gyroscope": false,
+        "accelerometer": false,
+        "ir_reciever": false,
+        "extension_ports": 1,
+        "headset_port": false,
+        "speaker": false,
+        "microphone": false,
+        "cable": {
+            "interface": "Micro USB-A",
+            "removable": true
+        },
+        "bluetooth": false,
+        "2_4ghz": false,
+        "rumble": "standard",
+        "digital_to_analog_conversion": null,
+        "pc_xinput": true,
+        "pc_steaminput": true,
+        "native_consoles": ["xb1", "xbs"],
+        "macro": false,
+        "turbo": false
+    }
+}
