@@ -2,19 +2,12 @@ on:
   pull_request:
     branches:
       - main
-name: Validate JSON
+
 jobs:
   validate:
+    name: Validate JSON Files against schemas
     runs-on: ubuntu-latest
-    permissions:
-      pull-requests: write
     steps:
-      - name: Delete previous comment
-        uses: izhangzhihao/delete-comment@master
-        with: 
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          delete_user_name: github-actions[bot]
-          issue_number: ${{ github.event.number }}
       - uses: actions/checkout@v3
       - name: Validate Category JSON
         uses: dsanders11/json-schema-validate-action@v1.1.0
@@ -31,9 +24,16 @@ jobs:
         with:
           schema: ".schema/controller.json"
           files: "*/*/*/config.json"
-      - name: Comment PR
-        if: failure()
-        uses: thollander/actions-comment-pull-request@v2.5.0
-        with:
-          message: |
-            Validation of the JSON files has failed, please check the [Github Action log](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) to see why
+      - name: Send status
+        if: ${{ success() }}
+        run: |
+          curl --request POST \
+          --url https://api.github.com/repos/${{ github.repository }}/statuses/${{ github.sha }} \
+          --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' \
+          --header 'content-type: application/json' \
+          --data '{
+            "context": "Validate JSON Files against schemas",
+            "state": "success",
+            "description": "JSON Files are valid",
+            "target_url": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          }'

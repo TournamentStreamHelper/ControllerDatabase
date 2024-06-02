@@ -1,10 +1,14 @@
 {
-    "name": "Nintendo 3DS",
+    "name": "Wii U Gamepad",
     "functions": {
         "analog_sticks": [
             {
-                "name": "Circle Pad",
-                "has_button": false
+                "name": "Left Stick",
+                "has_button": true
+            },
+            {
+                "name": "Right Stick",
+                "has_button": true
             }
         ],
         "digital_sticks": null,
@@ -32,26 +36,35 @@
             {
                 "name": "R",
                 "analog": false
+            },
+            {
+                "name": "ZL",
+                "analog": false
+            },
+            {
+                "name": "ZR",
+                "analog": false
             }
         ],
         "menu_buttons": [
-            "Start",
-            "Select"
+            "-",
+            "+"
         ],
         "system_buttons": [
             "Home"
         ],
         "other_buttons": [
+            "Sync",
             "Power",
-            "3D Slider",
-            "Wireless Switch"
+            "TV",
+            "Volume Slider"
         ],
         "trackpads": null,
         "touch_screens": [
             {
                 "resolution": [
-                    320,
-                    240
+                    854,
+                    480
                 ],
                 "type": "resistive"
             }
@@ -72,30 +85,23 @@
         ],
         "gyroscope": true,
         "accelerometer": true,
-        "ir_reciever": true,
-        "extension_ports": 0,
+        "ir_reciever": false,
+        "extension_ports": 1,
         "headset_port": true,
         "speaker": true,
         "microphone": true,
         "cable": null,
         "bluetooth": false,
         "2_4ghz": false,
-        "rumble": null,
+        "rumble": "standard",
         "digital_to_analog_conversion": null,
         "pc_xinput": false,
         "pc_steaminput": false,
-        "native_consoles": null,
+        "native_consoles": [
+            "wiiu"
+        ],
         "macro": false,
         "turbo": false
     },
-    "variants": [
-        {
-            "name": "Nintendo 3DS",
-            "image": "image.png"
-        },
-        {
-            "name": "Circle Pad Pro",
-            "image": "circlepro.png"
-        }
-    ]
+    "source": "https://archive.org/details/wii-u-operations-manual"
 }

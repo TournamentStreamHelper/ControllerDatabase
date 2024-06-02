@@ -1,12 +1,10 @@
-name: Generate the documentation from the JSON Schemas
-
 on:
   push:
     branches:
       - main
-      - docs
 jobs:
   generate_doc:
+    name: Generate the documentation from the JSON Schemas
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
@@ -16,6 +14,10 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
+        with:
+          repository: ${{ github.repository }}.wiki
+          path: .wiki
       - uses: actions/setup-python@v4
         with:
           python-version: "3.11"
@@ -28,27 +30,24 @@ jobs:
       - name: Install json-schema-for-humans
         run: pip install json-schema-for-humans
 
-      - name: Create documentation directory
-        run: mkdir -p _docs
-
       - name: Generate the documentation
         run: |
-          generate-schema-doc --config template_name=md_nested ./.schema/controller.json ./_docs/controller.md
-          generate-schema-doc --config template_name=md_nested ./.schema/manufacturer.json ./_docs/manufacturer.md
-          generate-schema-doc --config template_name=md_nested ./.schema/category.json ./_docs/category.md
+          generate-schema-doc --config template_name=md_nested ./.schema/controller.json "./.wiki/Controller Definition.md"
+          generate-schema-doc --config template_name=md_nested ./.schema/manufacturer.json "./.wiki/Manufacturer Definition.md"
+          generate-schema-doc --config template_name=md_nested ./.schema/category.json "./.wiki/Category Definition.md"
+      
+      - name: Generate Conntroller List
+        run: |
+          python3 .utilities/generate_controller_tables.py
 
       - run: git pull
       - name: Commit files
         run: |
+          cd .wiki
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add *
           if ! git diff-index --quiet HEAD; then
             git commit -m "Update documentation" -a
           fi
-
-      - name: push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ steps.extract_branch.outputs.branch }}
+          git push

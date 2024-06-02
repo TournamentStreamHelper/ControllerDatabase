@@ -1,9 +1,13 @@
 {
-    "name": "Nintendo 3DS",
+    "name": "New Nintendo 3DS XL",
     "functions": {
         "analog_sticks": [
             {
                 "name": "Circle Pad",
+                "has_button": false
+            },
+            {
+                "name": "C-Stick",
                 "has_button": false
             }
         ],
@@ -32,6 +36,14 @@
             {
                 "name": "R",
                 "analog": false
+            },
+            {
+                "name": "ZL",
+                "analog": false
+            },
+            {
+                "name": "ZR",
+                "analog": false
             }
         ],
         "menu_buttons": [
@@ -44,7 +56,7 @@
         "other_buttons": [
             "Power",
             "3D Slider",
-            "Wireless Switch"
+            "Volume Slider"
         ],
         "trackpads": null,
         "touch_screens": [
@@ -88,14 +100,5 @@
         "macro": false,
         "turbo": false
     },
-    "variants": [
-        {
-            "name": "Nintendo 3DS",
-            "image": "image.png"
-        },
-        {
-            "name": "Circle Pad Pro",
-            "image": "circlepro.png"
-        }
-    ]
+    "source": "https://fs-prod-cdn.nintendo-europe.com/media/downloads/support_1/new_nintendo_3ds/NewNintendo3DS_NewNintendo3DSXL_OperationsManual_UKV.pdf"
 }

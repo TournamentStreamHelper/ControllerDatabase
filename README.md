@@ -16,27 +16,3 @@ Here’s the general arborescence for this repository:
 │  │  ├─ image.png               Picture of the controller
 │  │  ├─ {variant}.png           Any image related to an alternative way to use the controller, either connected with an accessory or in a different configuration (See Joy-Con for examples)
 ```
-
-## Console IDs
-
-| ID | Console |
-| :---- | :---- |
-| `ps1` | PlayStation 1 |
-| `ps2` | PlayStation 2 |
-| `ps3` | PlayStation 3 |
-| `ps4` | PlayStation 4 |
-| `ps5` | PlayStation 5 |
-| `xbox` | Xbox |
-| `xb360` | Xbox 360 |
-| `xb1` | Xbox One |
-| `xbs` | Xbox Series X\|S |
-| `nes` | Nintendo Entertainment System / Famicom |
-| `snes` | Super Nintendo Entertainment System / Super Famicom |
-| `n64` | Nintendo 64 |
-| `ngc` | Nintendo GameCube |
-| `wii` | Nintendo Wii |
-| `wiiu` | Nintendo Wii U |
-| `nsw` | Nintendo Switch |
-| `smd` | Sega Mega Drive / Sega Genesis |
-| `saturn` | Sega Saturn |
-| `dc` | Sega Dreamcast |

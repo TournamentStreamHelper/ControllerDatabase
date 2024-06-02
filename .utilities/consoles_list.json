@@ -1,0 +1,21 @@
+{
+    "dc": "Sega Dreamcast",
+    "n64": "Nintendo 64",
+    "nes": "Nintendo Entertainment System / Famicom",
+    "ngc": "Nintendo GameCube",
+    "nsw": "Nintendo Switch",
+    "ps1": "Sony PlayStation 1",
+    "ps2": "Sony PlayStation 2",
+    "ps3": "Sony PlayStation 3",
+    "ps4": "Sony PlayStation 4",
+    "ps5": "Sony PlayStation 5",
+    "saturn": "Sega Saturn",
+    "smd": "Sega Mega Drive / Sega Genesis",
+    "snes": "Super Nintendo Entertainment System / Super Famicom",
+    "wii": "Nintendo Wii",
+    "wiiu": "Nintendo Wii U",
+    "xb1": "Xbox One",
+    "xb360": "Xbox 360",
+    "xbox": "Xbox",
+    "xbs": "Xbox Series X|S"
+}

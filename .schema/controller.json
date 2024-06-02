@@ -1,4 +1,5 @@
 {
+    "$id": "ControllerDatabase_controller",
     "$schema": "http://json-schema.org/draft-06/schema#",
     "$ref": "#/definitions/ControllerDefinition",
     "definitions": {
@@ -541,10 +542,14 @@
             "additionalProperties": false,
             "properties": {
                 "name": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "Name"
                 },
                 "image": {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "(.*)\\.(p|P)(n|N)(g|G)",
+                    "title": "Image",
+                    "description": "Name of a PNG image showing the mentionned variant\nThe image must be placed in the same folder as this config file\nNote: At least one of the variants must use the default `image.png` file"
                 }
             },
             "required": [

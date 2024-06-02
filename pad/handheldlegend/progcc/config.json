@@ -1,10 +1,14 @@
 {
-    "name": "Nintendo 3DS",
+    "name": "ProGCC 3",
     "functions": {
         "analog_sticks": [
             {
-                "name": "Circle Pad",
-                "has_button": false
+                "name": "Left Stick",
+                "has_button": true
+            },
+            {
+                "name": "Right Stick",
+                "has_button": true
             }
         ],
         "digital_sticks": null,
@@ -32,30 +36,29 @@
             {
                 "name": "R",
                 "analog": false
+            },
+            {
+                "name": "ZL",
+                "analog": false
+            },
+            {
+                "name": "ZR",
+                "analog": false
             }
         ],
         "menu_buttons": [
-            "Start",
-            "Select"
+            "-",
+            "+"
         ],
         "system_buttons": [
+            "Capture",
             "Home"
         ],
         "other_buttons": [
-            "Power",
-            "3D Slider",
-            "Wireless Switch"
+            "Sync"
         ],
         "trackpads": null,
-        "touch_screens": [
-            {
-                "resolution": [
-                    320,
-                    240
-                ],
-                "type": "resistive"
-            }
-        ],
+        "touch_screens": null,
         "directional_buttons": [
             {
                 "set": [
@@ -72,30 +75,30 @@
         ],
         "gyroscope": true,
         "accelerometer": true,
-        "ir_reciever": true,
+        "ir_reciever": false,
         "extension_ports": 0,
-        "headset_port": true,
-        "speaker": true,
-        "microphone": true,
-        "cable": null,
+        "headset_port": false,
+        "speaker": false,
+        "microphone": false,
+        "cable": {
+            "interface": "USB-C",
+            "removable": true
+        },
         "bluetooth": false,
         "2_4ghz": false,
-        "rumble": null,
+        "rumble": "standard",
         "digital_to_analog_conversion": null,
-        "pc_xinput": false,
-        "pc_steaminput": false,
-        "native_consoles": null,
+        "pc_xinput": true,
+        "pc_steaminput": true,
+        "native_consoles": [
+            "nsw",
+            "ngc",
+            "wii",
+            "n64",
+            "nes",
+            "snes"
+        ],
         "macro": false,
         "turbo": false
-    },
-    "variants": [
-        {
-            "name": "Nintendo 3DS",
-            "image": "image.png"
-        },
-        {
-            "name": "Circle Pad Pro",
-            "image": "circlepro.png"
-        }
-    ]
+    }
 }

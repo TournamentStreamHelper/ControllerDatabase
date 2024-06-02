@@ -57,7 +57,7 @@
         "cable": null,
         "bluetooth": true,
         "2_4ghz": false,
-        "rumble": "enhanced",
+        "rumble": "standard",
         "digital_to_analog_conversion": null,
         "pc_xinput": false,
         "pc_steaminput": false,
@@ -90,5 +90,6 @@
             "name": "Wii Classic Controller Pro",
             "image": "classicpro.png"
         }
-    ]
+    ],
+    "source": "https://archive.org/details/wii-u-operations-manual"
 }
