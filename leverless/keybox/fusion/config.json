@@ -5,19 +5,19 @@
         "digital_sticks": null,
         "action_buttons": [
             {
-                "name": "△",
+                "name": "Triangle",
                 "analog": false
             },
             {
-                "name": "◯",
+                "name": "Circle",
                 "analog": false
             },
             {
-                "name": "□",
+                "name": "Square",
                 "analog": false
             },
             {
-                "name": "✕",
+                "name": "Cross",
                 "analog": false
             },
             {
