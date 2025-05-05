@@ -1,0 +1,101 @@
+{
+    "name": "Sony DualShock 4 wireless controller",
+    "functions": {
+        "analog_sticks": [
+            {
+                "name": "Left Stick",
+                "has_button": true
+            },
+            {
+                "name": "Right Stick",
+                "has_button": true
+            }
+        ],
+        "digital_sticks": null,
+        "action_buttons": [
+            {
+                "name": "Triangle",
+                "analog": false
+            },
+            {
+                "name": "Circle",
+                "analog": false
+            },
+            {
+                "name": "Square",
+                "analog": false
+            },
+            {
+                "name": "Cross",
+                "analog": false
+            },
+            {
+                "name": "L1",
+                "analog": false
+            },
+            {
+                "name": "R1",
+                "analog": false
+            },
+            {
+                "name": "L2",
+                "analog": true
+            },
+            {
+                "name": "R2",
+                "analog": true
+            }
+        ],
+        "menu_buttons": [
+            "Options"
+        ],
+        "system_buttons": [
+            "Share",
+            "PS"
+        ],
+        "other_buttons": [],
+        "trackpads": [
+            {
+                "name": "Touchpad",
+                "clickable": true
+            }
+        ],
+        "touch_screens": null,
+        "directional_buttons": [
+            {
+                "set": [
+                    "Up",
+                    "Down",
+                    "Left",
+                    "Right"
+                ],
+                "socd_prevention": {
+                    "hardware": true,
+                    "software": null
+                }
+            }
+        ],
+        "gyroscope": true,
+        "accelerometer": true,
+        "ir_reciever": false,
+        "extension_ports": 1,
+        "headset_port": true,
+        "speaker": true,
+        "microphone": true,
+        "cable": {
+            "interface": "Micro USB-A",
+            "removable": true
+        },
+        "bluetooth": true,
+        "2_4ghz": false,
+        "rumble": "standard",
+        "digital_to_analog_conversion": null,
+        "pc_xinput": false,
+        "pc_steaminput": true,
+        "native_consoles": [
+            "ps4"
+        ],
+        "macro": false,
+        "turbo": false
+    }
+}
