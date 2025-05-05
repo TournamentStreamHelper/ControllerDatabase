@@ -255,7 +255,8 @@
                             "xbs",
                             "smd",
                             "saturn",
-                            "dc"
+                            "dc",
+                            "nsw2"
                         ]
                     },
                     "uniqueItems": true,
