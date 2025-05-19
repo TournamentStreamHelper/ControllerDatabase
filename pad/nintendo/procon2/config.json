@@ -1,5 +1,5 @@
 {
-    "name": "Nintendo Switch Joy-Con",
+    "name": "Nintendo Switch 2 Pro Controller",
     "functions": {
         "analog_sticks": [
             {
@@ -46,19 +46,11 @@
                 "analog": false
             },
             {
-                "name": "SL-L",
+                "name": "GL",
                 "analog": false
             },
             {
-                "name": "SR-L",
-                "analog": false
-            },
-            {
-                "name": "SL-R",
-                "analog": false
-            },
-            {
-                "name": "SR-R",
+                "name": "GR",
                 "analog": false
             }
         ],
@@ -68,10 +60,11 @@
         ],
         "system_buttons": [
             "Capture",
-            "Home"
+            "Home",
+            "C"
         ],
         "other_buttons": [
-            "Sync-L", "Sync-R"
+            "Sync"
         ],
         "trackpads": null,
         "touch_screens": null,
@@ -84,57 +77,30 @@
                     "Right"
                 ],
                 "socd_prevention": {
-                    "hardware": false,
+                    "hardware": true,
                     "software": null
                 }
             }
         ],
         "gyroscope": true,
         "accelerometer": false,
-        "ir_reciever": true,
-        "extension_ports": 2,
-        "headset_port": false,
+        "ir_reciever": false,
+        "extension_ports": 0,
+        "headset_port": true,
         "speaker": false,
         "microphone": false,
-        "cable": null,
+        "cable": {
+            "interface": "USB-C",
+            "removable": true
+        },
         "bluetooth": true,
         "2_4ghz": false,
         "rumble": "enhanced",
         "digital_to_analog_conversion": null,
         "pc_xinput": false,
-        "pc_steaminput": false,
-        "native_consoles": ["nsw", "nsw2"],
+        "pc_steaminput": true,
+        "native_consoles": ["nsw2"],
         "macro": false,
         "turbo": false
-    },
-    "variants": [
-        {
-            "name": "Joy-Con Pair",
-            "image": "image.png"
-        },
-        {
-            "name": "Joy-Con Grip",
-            "image": "grip.png"
-        },
-        {
-            "name": "Joy-Con (L)",
-            "image": "left.png"
-        },
-        {
-            "name": "Joy-Con (R)",
-            "image": "right.png"
-        },
-        {
-            "name": "Handheld Mode",
-            "image": "portable.png"
-        },
-        {
-            "name": "Ring-Con",
-            "image": "ring.png"
-        },
-        {
-            "name": "Leg Strap",
-            "image": "leg.png"
-        }
-    ]
+    }
 }

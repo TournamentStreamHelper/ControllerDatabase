@@ -1,5 +1,5 @@
 {
-    "name": "Nintendo Switch Joy-Con",
+    "name": "Nintendo Switch 2 Joy-Con 2",
     "functions": {
         "analog_sticks": [
             {
@@ -60,6 +60,14 @@
             {
                 "name": "SR-R",
                 "analog": false
+            },
+            {
+                "name": "GL",
+                "analog": false
+            },
+            {
+                "name": "GR",
+                "analog": false
             }
         ],
         "menu_buttons": [
@@ -68,7 +76,8 @@
         ],
         "system_buttons": [
             "Capture",
-            "Home"
+            "Home",
+            "C"
         ],
         "other_buttons": [
             "Sync-L", "Sync-R"
@@ -103,38 +112,30 @@
         "digital_to_analog_conversion": null,
         "pc_xinput": false,
         "pc_steaminput": false,
-        "native_consoles": ["nsw", "nsw2"],
+        "native_consoles": ["nsw2"],
         "macro": false,
         "turbo": false
     },
     "variants": [
         {
-            "name": "Joy-Con Pair",
+            "name": "Joy-Con 2 Pair",
             "image": "image.png"
         },
         {
-            "name": "Joy-Con Grip",
+            "name": "Joy-Con 2 Grip",
             "image": "grip.png"
         },
         {
-            "name": "Joy-Con (L)",
+            "name": "Joy-Con 2 (L)",
             "image": "left.png"
         },
         {
-            "name": "Joy-Con (R)",
+            "name": "Joy-Con 2 (R)",
             "image": "right.png"
         },
         {
             "name": "Handheld Mode",
             "image": "portable.png"
-        },
-        {
-            "name": "Ring-Con",
-            "image": "ring.png"
-        },
-        {
-            "name": "Leg Strap",
-            "image": "leg.png"
         }
     ]
 }
