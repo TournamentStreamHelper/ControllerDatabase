@@ -46,7 +46,7 @@
                 "analog": true
             }
         ],
-        "menu_buttons": ["Back", "Menu"],
+        "menu_buttons": ["View", "Menu"],
         "system_buttons": ["Share", "Guide"],
         "other_buttons": ["Sync"],
         "trackpads": null,
