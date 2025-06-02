@@ -41,7 +41,7 @@
             "-",
             "+"
         ],
-        "system_buttons": null,
+        "system_buttons": [],
         "other_buttons": null,
         "trackpads": null,
         "touch_screens": null,
