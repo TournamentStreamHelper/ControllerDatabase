@@ -1,14 +1,14 @@
 {
-    "name": "Nintendo Switch 2 Pro Controller",
+    "name": "Nintendo GameCube - Nintendo Classics controller for Nintendo Switch 2",
     "functions": {
         "analog_sticks": [
             {
-                "name": "Left Stick",
-                "has_button": true
+                "name": "Analog Stick",
+                "has_button": false
             },
             {
-                "name": "Right Stick",
-                "has_button": true
+                "name": "C-Stick",
+                "has_button": false
             }
         ],
         "digital_sticks": null,
@@ -31,32 +31,23 @@
             },
             {
                 "name": "L",
-                "analog": false
+                "analog": true
             },
             {
                 "name": "R",
-                "analog": false
+                "analog": true
             },
             {
                 "name": "ZL",
                 "analog": false
             },
             {
-                "name": "ZR",
-                "analog": false
-            },
-            {
-                "name": "GL",
-                "analog": false
-            },
-            {
-                "name": "GR",
+                "name": "Z",
                 "analog": false
             }
         ],
         "menu_buttons": [
-            "-",
-            "+"
+            "Start"
         ],
         "system_buttons": [
             "Capture",
@@ -95,7 +86,7 @@
         },
         "bluetooth": true,
         "2_4ghz": false,
-        "rumble": "enhanced",
+        "rumble": "standard",
         "digital_to_analog_conversion": null,
         "pc_xinput": false,
         "pc_steaminput": false,
