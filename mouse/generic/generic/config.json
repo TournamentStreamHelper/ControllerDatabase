@@ -38,6 +38,7 @@
         "pc_steaminput": false,
         "native_consoles": null,
         "macro": false,
-        "turbo": false
+        "turbo": false,
+        "scroll_wheel": true
     }
 }
