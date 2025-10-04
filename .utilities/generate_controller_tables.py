@@ -236,6 +236,7 @@ def process_functions(functions:dict, level=1):
 
 | Feature | Value |
 | :---: | :---: |
+| Scroll Wheel | {bool_to_emoji(functions.get('scroll_wheel', False))} |
 | Macro | {bool_to_emoji(functions['macro'])} |
 | Turbo | {bool_to_emoji(functions['turbo'])} |
 | Accelerometer | {bool_to_emoji(functions['accelerometer'])} |
