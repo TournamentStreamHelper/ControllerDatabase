@@ -1,0 +1,43 @@
+{
+    "name": "Generic mouse",
+    "functions": {
+        "analog_sticks": null,
+        "digital_sticks": null,
+        "action_buttons": [
+            {
+                "name": "Left Click",
+                "analog": false
+            },
+            {
+                "name": "Right Click",
+                "analog": false
+            },
+            {
+                "name": "Scroll Wheel Click",
+                "analog": false
+            }
+        ],
+        "menu_buttons": null,
+        "other_buttons": null,
+        "trackpads": null,
+        "touch_screens": null,
+        "directional_buttons": null,
+        "gyroscope": false,
+        "accelerometer": false,
+        "ir_reciever": false,
+        "extension_ports": 0,
+        "headset_port": false,
+        "speaker": false,
+        "microphone": false,
+        "cable": null,
+        "bluetooth": false,
+        "2_4ghz": false,
+        "rumble": null,
+        "digital_to_analog_conversion": null,
+        "pc_xinput": false,
+        "pc_steaminput": false,
+        "native_consoles": null,
+        "macro": false,
+        "turbo": false
+    }
+}

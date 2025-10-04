@@ -51,6 +51,11 @@
                     },
                     "uniqueItems": true
                 },
+                "scroll_wheel": {
+                    "type": "boolean",
+                    "title": "Scroll Wheel",
+                    "description": "Whether or not the controller has a scroll wheel"
+                },
                 "digital_sticks": {
                     "type": [
                         "array",
