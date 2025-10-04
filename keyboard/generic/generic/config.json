@@ -1,0 +1,364 @@
+{
+    "name": "Generic keyboard",
+    "functions": {
+        "analog_sticks": null,
+        "digital_sticks": null,
+        "action_buttons": [
+            {
+                "name": "Escape",
+                "analog": false
+            },
+            {
+                "name": "F1",
+                "analog": false
+            },
+            {
+                "name": "F2",
+                "analog": false
+            },
+            {
+                "name": "F3",
+                "analog": false
+            },
+            {
+                "name": "F4",
+                "analog": false
+            },
+            {
+                "name": "F5",
+                "analog": false
+            },
+            {
+                "name": "F6",
+                "analog": false
+            },
+            {
+                "name": "F7",
+                "analog": false
+            },
+            {
+                "name": "F8",
+                "analog": false
+            },
+            {
+                "name": "F9",
+                "analog": false
+            },
+            {
+                "name": "F10",
+                "analog": false
+            },
+            {
+                "name": "F11",
+                "analog": false
+            },
+            {
+                "name": "F12",
+                "analog": false
+            },
+            {
+                "name": "1",
+                "analog": false
+            },
+            {
+                "name": "2",
+                "analog": false
+            },
+            {
+                "name": "3",
+                "analog": false
+            },
+            {
+                "name": "4",
+                "analog": false
+            },
+            {
+                "name": "5",
+                "analog": false
+            },
+            {
+                "name": "6",
+                "analog": false
+            },
+            {
+                "name": "7",
+                "analog": false
+            },
+            {
+                "name": "8",
+                "analog": false
+            },
+            {
+                "name": "9",
+                "analog": false
+            },
+            {
+                "name": "0",
+                "analog": false
+            },
+            {
+                "name": "`",
+                "analog": false
+            },
+            {
+                "name": "-",
+                "analog": false
+            },
+            {
+                "name": "=",
+                "analog": false
+            },
+            {
+                "name": "[",
+                "analog": false
+            },
+            {
+                "name": "]",
+                "analog": false
+            },
+            {
+                "name": "\\",
+                "analog": false
+            },
+            {
+                "name": ";",
+                "analog": false
+            },
+            {
+                "name": "'",
+                "analog": false
+            },
+            {
+                "name": ",",
+                "analog": false
+            },
+            {
+                "name": ".",
+                "analog": false
+            },
+            {
+                "name": "/",
+                "analog": false
+            },
+            {
+                "name": "Tab",
+                "analog": false
+            },
+            {
+                "name": "Caps Lock",
+                "analog": false
+            },
+            {
+                "name": "L-Shift",
+                "analog": false
+            },
+            {
+                "name": "L-Ctrl",
+                "analog": false
+            },
+            {
+                "name": "L-Win",
+                "analog": false
+            },
+            {
+                "name": "L-Alt",
+                "analog": false
+            },
+            {
+                "name": "R-Shift",
+                "analog": false
+            },
+            {
+                "name": "R-Ctrl",
+                "analog": false
+            },
+            {
+                "name": "R-Win",
+                "analog": false
+            },
+            {
+                "name": "R-Alt",
+                "analog": false
+            },
+            {
+                "name": "Menu",
+                "analog": false
+            },
+            {
+                "name": "Enter",
+                "analog": false
+            },
+            {
+                "name": "Space",
+                "analog": false
+            },
+            {
+                "name": "Backspace",
+                "analog": false
+            },
+            {
+                "name": "Delete",
+                "analog": false
+            },
+            {
+                "name": "Insert",
+                "analog": false
+            },
+            {
+                "name": "Home",
+                "analog": false
+            },
+            {
+                "name": "Page Up",
+                "analog": false
+            },
+            {
+                "name": "Page Down",
+                "analog": false
+            },
+            {
+                "name": "End",
+                "analog": false
+            },
+            {
+                "name": "A",
+                "analog": false
+            },
+            {
+                "name": "Z",
+                "analog": false
+            },
+            {
+                "name": "E",
+                "analog": false
+            },
+            {
+                "name": "R",
+                "analog": false
+            },
+            {
+                "name": "T",
+                "analog": false
+            },
+            {
+                "name": "Y",
+                "analog": false
+            },
+            {
+                "name": "U",
+                "analog": false
+            },
+            {
+                "name": "I",
+                "analog": false
+            },
+            {
+                "name": "O",
+                "analog": false
+            },
+            {
+                "name": "P",
+                "analog": false
+            },
+            {
+                "name": "Q",
+                "analog": false
+            },
+            {
+                "name": "S",
+                "analog": false
+            },
+            {
+                "name": "D",
+                "analog": false
+            },
+            {
+                "name": "F",
+                "analog": false
+            },
+            {
+                "name": "G",
+                "analog": false
+            },
+            {
+                "name": "H",
+                "analog": false
+            },
+            {
+                "name": "J",
+                "analog": false
+            },
+            {
+                "name": "K",
+                "analog": false
+            },
+            {
+                "name": "L",
+                "analog": false
+            },
+            {
+                "name": "M",
+                "analog": false
+            },
+            {
+                "name": "W",
+                "analog": false
+            },
+            {
+                "name": "X",
+                "analog": false
+            },
+            {
+                "name": "C",
+                "analog": false
+            },
+            {
+                "name": "V",
+                "analog": false
+            },
+            {
+                "name": "B",
+                "analog": false
+            },
+            {
+                "name": "N",
+                "analog": false
+            }
+        ],
+        "menu_buttons": null,
+        "other_buttons": null,
+        "trackpads": null,
+        "touch_screens": null,
+        "directional_buttons": [
+            {
+                "set": [
+                    "Up",
+                    "Down",
+                    "Left",
+                    "Right"
+                ],
+                "socd_prevention": {
+                    "hardware": false,
+                    "software": null
+                }
+            }
+        ],
+        "gyroscope": false,
+        "accelerometer": false,
+        "ir_reciever": false,
+        "extension_ports": 0,
+        "headset_port": false,
+        "speaker": false,
+        "microphone": false,
+        "cable": null,
+        "bluetooth": false,
+        "2_4ghz": false,
+        "rumble": null,
+        "digital_to_analog_conversion": null,
+        "pc_xinput": false,
+        "pc_steaminput": false,
+        "native_consoles": null,
+        "macro": false,
+        "turbo": false
+    }
+}
