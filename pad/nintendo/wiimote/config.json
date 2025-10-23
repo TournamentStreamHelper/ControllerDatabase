@@ -1,5 +1,6 @@
 {
     "name": "Nintendo Wii Remote",
+    "short_name": "Wii Remote",
     "functions": {
         "analog_sticks": null,
         "digital_sticks": null,

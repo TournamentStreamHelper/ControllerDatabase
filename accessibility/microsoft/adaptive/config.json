@@ -1,5 +1,6 @@
 {
     "name": "Microsoft Xbox Adaptive Controller",
+    "short_name": "Xbox Adaptive Controller",
     "functions": {
         "analog_sticks": null,
         "digital_sticks": null,

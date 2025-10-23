@@ -1,5 +1,6 @@
 {
     "name": "Sony DualSense Edge wireless controller",
+    "short_name": "DualSense Edge",
     "functions": {
         "analog_sticks": [
             {
