@@ -1,5 +1,6 @@
 {
     "name": "Sony DualShock 4 wireless controller",
+    "short_name": "DualShock 4",
     "functions": {
         "analog_sticks": [
             {

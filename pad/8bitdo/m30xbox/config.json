@@ -1,5 +1,6 @@
 {
     "name": "8BitDo M30 Wired Controller for Xbox",
+    "short_name": "8BitDo M30",
     "functions": {
         "analog_sticks": null,
         "digital_sticks": null,

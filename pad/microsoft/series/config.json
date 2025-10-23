@@ -1,5 +1,6 @@
 {
     "name": "Microsoft Xbox Wireless Controller (Xbox Series X|S variant)",
+    "short_name": "Xbox Series X|S Controller",
     "functions": {
         "analog_sticks": [
             {

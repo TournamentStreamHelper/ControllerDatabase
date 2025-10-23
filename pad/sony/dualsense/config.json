@@ -1,5 +1,6 @@
 {
     "name": "Sony DualSense wireless controller",
+    "short_name": "DualSense",
     "functions": {
         "analog_sticks": [
             {

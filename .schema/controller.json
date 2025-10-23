@@ -28,6 +28,11 @@
                         "$ref": "#/definitions/Variant"
                     },
                     "uniqueItems": true
+                },
+                "short_name": {
+                    "type": "string",
+                    "title": "Short name",
+                    "description": "Shorter display name for the device"
                 }
             },
             "required": [

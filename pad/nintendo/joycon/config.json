@@ -1,5 +1,6 @@
 {
     "name": "Nintendo Switch Joy-Con",
+    "short_name": "Joy-Con",
     "functions": {
         "analog_sticks": [
             {

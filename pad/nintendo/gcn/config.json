@@ -1,5 +1,6 @@
 {
     "name": "Nintendo GameCube Controller",
+    "short_name": "GameCube Controller",
     "functions": {
         "analog_sticks": [
             {
