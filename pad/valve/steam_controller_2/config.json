@@ -96,7 +96,7 @@
         "accelerometer": true,
         "ir_reciever": false,
         "extension_ports": 0,
-        "headset_port": false,
+        "headset_port": true,
         "speaker": false,
         "microphone": false,
         "cable": {
