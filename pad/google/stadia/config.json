@@ -1,5 +1,6 @@
 {
-    "name": "Steam Controller (2026)",
+    "name": "Google Stadia Controller",
+    "short_name": "Stadia Controller",
     "functions": {
         "analog_sticks": [
             {
@@ -39,63 +40,31 @@
             },
             {
                 "name": "L2",
-                "analog": true,
-                "clickable": false
+                "analog": true
             },
             {
                 "name": "R2",
-                "analog": true,
-                "clickable": false
-            },
-            {
-                "name": "L3",
-                "analog": false
-            },
-            {
-                "name": "R3",
-                "analog": false
-            },
-            {
-                "name": "L4",
-                "analog": false
-            },
-            {
-                "name": "R4",
-                "analog": false
+                "analog": true
             }
         ],
-        "menu_buttons": ["View", "Menu"],
-        "system_buttons": ["Steam", "Quick Access Menu"],
+        "menu_buttons": ["Options", "Menu"],
+        "system_buttons": ["Capture", "Stadia", "Google Assistant"],
         "other_buttons": null,
-        "trackpads": [
-            {
-                "name": "Left Trackpad",
-                "clickable": true
-            },
-            {
-                "name": "Right Trackpad",
-                "clickable": true
-            }
-        ],
+        "trackpads": null,
         "touch_screens": null,
         "directional_buttons": [
             {
-                "set": [
-                    "Up",
-                    "Down",
-                    "Left",
-                    "Right"
-                ],
+                "set": ["Up", "Down", "Left", "Right"],
                 "socd_prevention": {
                     "hardware": true,
                     "software": null
                 }
             }
         ],
-        "gyroscope": true,
-        "accelerometer": true,
+        "gyroscope": false,
+        "accelerometer": false,
         "ir_reciever": false,
-        "extension_ports": 0,
+        "extension_ports": 1,
         "headset_port": true,
         "speaker": false,
         "microphone": false,
@@ -104,8 +73,8 @@
             "removable": true
         },
         "bluetooth": true,
-        "2_4ghz": true,
-        "rumble": "enhanced",
+        "2_4ghz": false,
+        "rumble": "standard",
         "digital_to_analog_conversion": null,
         "pc_xinput": false,
         "pc_steaminput": true,
