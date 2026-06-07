@@ -1,5 +1,6 @@
 {
-    "name": "Generic arcade stick",
+    "name": "FlexStrike wireless fight stick",
+    "short_name": "FlexStrike",
     "functions": {
         "analog_sticks": null,
         "digital_sticks": [
@@ -10,43 +11,58 @@
         ],
         "action_buttons": [
             {
-                "name": "A",
+                "name": "Square",
                 "analog": false
             },
             {
-                "name": "B",
+                "name": "Circle",
                 "analog": false
             },
             {
-                "name": "X",
+                "name": "Triangle",
                 "analog": false
             },
             {
-                "name": "Y",
+                "name": "Cross",
                 "analog": false
             },
             {
-                "name": "LB",
+                "name": "L1",
                 "analog": false
             },
             {
-                "name": "LT",
+                "name": "L2",
                 "analog": false
             },
             {
-                "name": "RB",
+                "name": "R1",
                 "analog": false
             },
             {
-                "name": "RT",
+                "name": "R2",
+                "analog": false
+            },
+            {
+                "name": "L3",
+                "analog": false
+            },
+            {
+                "name": "R3",
                 "analog": false
             }
         ],
-        "menu_buttons": [
-            "Menu", "Back"
+        "menu_buttons": ["Options"],
+        "system_buttons": [
+            "Create",
+            "PS"
         ],
-        "other_buttons": null,
-        "trackpads": null,
+        "other_buttons": ["Lock"],
+        "trackpads": [
+            {
+                "name": "Touchpad",
+                "clickable": true
+            }
+        ],
         "touch_screens": null,
         "directional_buttons": null,
         "gyroscope": false,
@@ -58,23 +74,33 @@
         "microphone": false,
         "cable": null,
         "bluetooth": false,
-        "2_4ghz": false,
+        "2_4ghz": true,
         "rumble": null,
         "digital_to_analog_conversion": [
             {
-                "emulated_analog": "LT",
+                "emulated_analog": "L2",
                 "type": "button",
                 "modifier_buttons": 0
             },
             {
-                "emulated_analog": "RT",
+                "emulated_analog": "R2",
                 "type": "button",
+                "modifier_buttons": 0
+            },
+            {
+                "emulated_analog": "Left Stick",
+                "type": "8_way",
+                "modifier_buttons": 0
+            },
+            {
+                "emulated_analog": "Right Stick",
+                "type": "8_way",
                 "modifier_buttons": 0
             }
         ],
         "pc_xinput": false,
         "pc_steaminput": false,
-        "native_consoles": null,
+        "native_consoles": ["ps5"],
         "macro": false,
         "turbo": false
     }

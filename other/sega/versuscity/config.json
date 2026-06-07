@@ -1,5 +1,6 @@
 {
-    "name": "Generic arcade stick",
+    "name": "Sega Versus City arcade cabinet",
+    "short_name": "Sega Versus City",
     "functions": {
         "analog_sticks": null,
         "digital_sticks": [
@@ -10,40 +11,32 @@
         ],
         "action_buttons": [
             {
-                "name": "A",
+                "name": "Light Punch",
                 "analog": false
             },
             {
-                "name": "B",
+                "name": "Medium Punch",
                 "analog": false
             },
             {
-                "name": "X",
+                "name": "Heavy Punch",
                 "analog": false
             },
             {
-                "name": "Y",
+                "name": "Light Kick",
                 "analog": false
             },
             {
-                "name": "LB",
+                "name": "Medium Kick",
                 "analog": false
             },
             {
-                "name": "LT",
-                "analog": false
-            },
-            {
-                "name": "RB",
-                "analog": false
-            },
-            {
-                "name": "RT",
+                "name": "Heavy Kick",
                 "analog": false
             }
         ],
         "menu_buttons": [
-            "Menu", "Back"
+            "Start"
         ],
         "other_buttons": null,
         "trackpads": null,
@@ -60,18 +53,7 @@
         "bluetooth": false,
         "2_4ghz": false,
         "rumble": null,
-        "digital_to_analog_conversion": [
-            {
-                "emulated_analog": "LT",
-                "type": "button",
-                "modifier_buttons": 0
-            },
-            {
-                "emulated_analog": "RT",
-                "type": "button",
-                "modifier_buttons": 0
-            }
-        ],
+        "digital_to_analog_conversion": null,
         "pc_xinput": false,
         "pc_steaminput": false,
         "native_consoles": null,

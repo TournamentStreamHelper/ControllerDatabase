@@ -2,7 +2,12 @@
     "name": "HORI Fighting Stick α",
     "functions": {
         "analog_sticks": null,
-        "digital_sticks": null,
+        "digital_sticks": [
+            {
+                "name": "Digital stick",
+                "has_button": false
+            }
+        ],
         "action_buttons": [
             {
                 "name": "Triangle",
@@ -61,20 +66,7 @@
             }
         ],
         "touch_screens": null,
-        "directional_buttons": [
-            {
-                "set": [
-                    "Up",
-                    "Down",
-                    "Left",
-                    "Right"
-                ],
-                "socd_prevention": {
-                    "hardware": true,
-                    "software": null
-                }
-            }
-        ],
+        "directional_buttons": null,
         "gyroscope": false,
         "accelerometer": false,
         "ir_reciever": false,
