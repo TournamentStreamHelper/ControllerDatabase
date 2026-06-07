@@ -2,7 +2,12 @@
     "name": "Generic arcade stick",
     "functions": {
         "analog_sticks": null,
-        "digital_sticks": null,
+        "digital_sticks": [
+            {
+                "name": "Digital stick",
+                "has_button": false
+            }
+        ],
         "action_buttons": [
             {
                 "name": "A",
@@ -43,20 +48,7 @@
         "other_buttons": null,
         "trackpads": null,
         "touch_screens": null,
-        "directional_buttons": [
-            {
-                "set": [
-                    "Up",
-                    "Down",
-                    "Left",
-                    "Right"
-                ],
-                "socd_prevention": {
-                    "hardware": true,
-                    "software": null
-                }
-            }
-        ],
+        "directional_buttons": null,
         "gyroscope": false,
         "accelerometer": false,
         "ir_reciever": false,
