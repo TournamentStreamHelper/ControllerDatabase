@@ -51,6 +51,7 @@
                 "analog": false
             }
         ],
+        "menu_buttons": ["Options"],
         "system_buttons": [
             "Create",
             "PS"
