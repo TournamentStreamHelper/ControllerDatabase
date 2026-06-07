@@ -1,0 +1,63 @@
+{
+    "name": "Sega Versus City arcade cabinet",
+    "short_name": "Sega Versus City",
+    "functions": {
+        "analog_sticks": null,
+        "digital_sticks": [
+            {
+                "name": "Digital stick",
+                "has_button": false
+            }
+        ],
+        "action_buttons": [
+            {
+                "name": "Light Punch",
+                "analog": false
+            },
+            {
+                "name": "Medium Punch",
+                "analog": false
+            },
+            {
+                "name": "Heavy Punch",
+                "analog": false
+            },
+            {
+                "name": "Light Kick",
+                "analog": false
+            },
+            {
+                "name": "Medium Kick",
+                "analog": false
+            },
+            {
+                "name": "Heavy Kick",
+                "analog": false
+            }
+        ],
+        "menu_buttons": [
+            "Start"
+        ],
+        "other_buttons": null,
+        "trackpads": null,
+        "touch_screens": null,
+        "directional_buttons": null,
+        "gyroscope": false,
+        "accelerometer": false,
+        "ir_reciever": false,
+        "extension_ports": 0,
+        "headset_port": false,
+        "speaker": false,
+        "microphone": false,
+        "cable": null,
+        "bluetooth": false,
+        "2_4ghz": false,
+        "rumble": null,
+        "digital_to_analog_conversion": null,
+        "pc_xinput": false,
+        "pc_steaminput": false,
+        "native_consoles": null,
+        "macro": false,
+        "turbo": false
+    }
+}
