@@ -126,7 +126,7 @@
         "pc_xinput": true,
         "pc_steaminput": true,
         "native_consoles": [
-            "nsw"
+            "nsw", "nsw2"
         ],
         "macro": false,
         "turbo": true

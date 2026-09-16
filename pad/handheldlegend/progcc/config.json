@@ -96,7 +96,8 @@
             "wii",
             "n64",
             "nes",
-            "snes"
+            "snes",
+            "nsw2"
         ],
         "macro": false,
         "turbo": false
