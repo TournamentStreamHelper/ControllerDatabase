@@ -1,8 +1,11 @@
 {
+    "aes": "Neo Geo AES",
     "dc": "Sega Dreamcast",
     "n64": "Nintendo 64",
     "nes": "Nintendo Entertainment System / Famicom",
+    "ng64": "Hyper Neo Geo 64",
     "ngc": "Nintendo GameCube",
+    "ngcd": "Neo Geo CD",
     "nsw": "Nintendo Switch",
     "nsw2": "Nintendo Switch 2",
     "ps1": "Sony PlayStation 1",

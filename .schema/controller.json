@@ -266,7 +266,10 @@
                             "smd",
                             "saturn",
                             "dc",
-                            "nsw2"
+                            "nsw2",
+                            "ng64",
+                            "ngcd",
+                            "aes"
                         ]
                     },
                     "uniqueItems": true,
