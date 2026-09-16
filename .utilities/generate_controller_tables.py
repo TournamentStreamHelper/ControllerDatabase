@@ -272,7 +272,8 @@ def process_controller(path, level = 1):
         sorted_list = deepcopy(controller["functions"].get("native_consoles"))
         sorted_list.sort()
         for console in sorted_list:
-            result += f"- {consoles_dict[console].replace('|', '\\|')}\n"
+            display_text_for_console = consoles_dict[console].replace('|', '\\|')
+            result += f"- {display_text_for_console}\n"
         result += "\n"
     result += f"""{'#'*(level+1)} Functions
 
@@ -337,7 +338,8 @@ def process_all():
 def create_consoles_table():
     result = "| ID | Name |\n| :---: | :--- |\n"
     for console in consoles_dict.keys():
-        result += f"| `{console}` | {consoles_dict[console].replace('|', '\\|')} |\n"
+        display_text_for_console = consoles_dict[console].replace('|', '\\|')
+        result += f"| `{console}` | {display_text_for_console} |\n"
     with open(".wiki/Console IDs.md", "wt", encoding="utf-8") as md_file:
         md_file.write(result)
 
