@@ -1,0 +1,39 @@
+{
+    "name": "Magic Mouse (2024)",
+    "functions": {
+        "analog_sticks": null,
+        "digital_sticks": null,
+        "action_buttons": null,
+        "menu_buttons": null,
+        "other_buttons": null,
+        "trackpads": [
+            {
+                "name": "Touchpad",
+                "clickable": true
+            }
+        ],
+        "touch_screens": null,
+        "directional_buttons": null,
+        "gyroscope": false,
+        "accelerometer": false,
+        "ir_reciever": false,
+        "extension_ports": 0,
+        "headset_port": false,
+        "speaker": false,
+        "microphone": false,
+        "cable": {
+            "interface": "USB-C",
+            "removable": true
+        },
+        "bluetooth": true,
+        "2_4ghz": false,
+        "rumble": null,
+        "digital_to_analog_conversion": null,
+        "pc_xinput": false,
+        "pc_steaminput": false,
+        "native_consoles": null,
+        "macro": false,
+        "turbo": false,
+        "scroll_wheel": false
+    }
+}
