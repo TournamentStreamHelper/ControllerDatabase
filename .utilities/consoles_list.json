@@ -18,5 +18,8 @@
     "xb1": "Xbox One",
     "xb360": "Xbox 360",
     "xbox": "Xbox",
-    "xbs": "Xbox Series X|S"
+    "xbs": "Xbox Series X|S",
+    "aes": "Neo Geo AES",
+    "ngcd": "Neo Geo CD",
+    "ng64": "Hyper Neo Geo 64"
 }
